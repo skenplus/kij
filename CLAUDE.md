@@ -117,9 +117,22 @@ The platform must support export in: TXT, Markdown, PDF, DOCX, JSON, CSV, HTML, 
 
 ## Prompt Libraries in This Repository
 
-The `docs/` or `prompts/` directory (to be created) will store reusable prompt masters:
-- `Concepteur_IA_multi_agents_complet` — master system prompt for the full platform
-- `Prompt_Ultime_Creation_Livres_IA` — book generation pipeline (all genres, KDP-ready)
-- `prompt_atlas_spiritualites_religions_traditions` — world spiritualities comparative atlas
-- `version_prompt_operationnel_plateforme_ia_multi_agents` — short operational system prompt
-- Domain-specific prompts: financial sciences, public administration, general culture
+The `prompts/` directory stores reusable operational system prompts:
+
+| File | Description |
+|---|---|
+| `plateforme_aide_humanitaire_professionnelle.md` | **Humanitarian & professional aid platform** — 12 specialized agents covering employment, housing, legal orientation, health access, social resources, CV/cover letter writing, non-clinical psychosocial support, and multilingual communication. Includes emergency numbers, ethical rules, action plan format, and Supabase schema extension. |
+| `Concepteur_IA_multi_agents_complet` | Master system prompt for the full platform |
+| `Prompt_Ultime_Creation_Livres_IA` | Book generation pipeline (all genres, KDP-ready) |
+| `prompt_atlas_spiritualites_religions_traditions` | World spiritualities comparative atlas |
+| `version_prompt_operationnel_plateforme_ia_multi_agents` | Short operational system prompt |
+| Domain-specific prompts | Financial sciences, public administration, general culture |
+
+## Humanitarian Platform — Additional Supabase Tables
+
+This module extends the base schema with:
+- `beneficiaires` — profile, situation, language, location
+- `dossiers` — identified needs, activated agents, follow-up status
+- `ressources_locales` — services and organizations indexed by department/region
+- `documents_produits` — generated CVs, letters, administrative documents
+- `plans_action` — steps, deadlines, status (done / in progress / to do)
