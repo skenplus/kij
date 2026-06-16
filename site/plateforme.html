@@ -1,202 +1,199 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plateforme IA multi-agents — KIJ</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plateforme IA multi-agents — KIJ</title>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo"><div class="logo-icon">K</div>KIJ<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="plateforme.html" class="active">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-      </div>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </nav>
-    <nav class="mobile-menu">
-      <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
-    </nav>
-  </div>
+<div class="container" data-i18n="txt-plateforme-455">
+<nav class="nav">
+<a class="nav-logo" data-i18n="txt-apropos-158" href="index.html"><div class="logo-icon" data-i18n="txt-index-84">K</div>KIJ<span>.</span></a>
+<div class="nav-links" data-i18n="txt-plateforme-456">
+<a data-i18n="nav-home" href="index.html">Accueil</a>
+<a class="active" data-i18n="nav-platform" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="nav-aid" href="humanitaire.html">Aide humanitaire</a>
+<a data-i18n="nav-about" href="apropos.html">À propos</a>
+<a class="nav-cta" data-i18n="nav-contact" href="contact.html">Contact</a>
+<select id="lang-select" style="margin-left: 15px; padding: 5px; border-radius: 4px; border: 1px solid var(--border); background: var(--white); color: var(--text);">
+<option value="fr">FR</option>
+<option value="en">EN</option>
+</select>
+</div>
+<button aria-expanded="false" aria-label="Menu" class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-menu">
+<a data-i18n="txt-index-55" href="index.html">Accueil</a><a data-i18n="txt-index-56" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="txt-index-57" href="humanitaire.html">Aide humanitaire</a><a data-i18n="txt-index-58" href="apropos.html">À propos</a><a data-i18n="txt-index-59" href="contact.html">Contact</a>
+</nav>
+</div>
 </header>
-
 <section class="page-hero">
-  <div class="container">
-    <nav class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Plateforme IA</span></nav>
-    <h1>Architecture IA<br />multi-agents</h1>
-    <p>20 agents principaux, 36 sous-agents, 8 outils connectés — une plateforme modulaire pour analyser, corriger, structurer et livrer.</p>
-  </div>
+<div class="container">
+<nav class="breadcrumb"><a data-i18n="txt-index-55" href="index.html">Accueil</a><span data-i18n="txt-apropos-154">/</span><span data-i18n="txt-index-56">Plateforme IA</span></nav>
+<h1 data-i18n="txt-plateforme-368">Architecture IA<br/>multi-agents</h1>
+<p data-i18n="txt-plateforme-399">20 agents principaux, 36 sous-agents, 8 outils connectés — une plateforme modulaire pour analyser, corriger, structurer et livrer.</p>
+</div>
 </section>
-
 <!-- PILE TECHNIQUE -->
 <section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>La pile technologique</h2>
-      <p>Chaque outil joue un rôle précis. La logique <strong>ET</strong> : utiliser les deux quand c'est complémentaire.</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Couche</th><th>Outil</th><th>Rôle principal</th></tr></thead>
-        <tbody>
-          <tr><td><span class="tag tag-blue">IA principale</span></td><td><strong>Claude API</strong></td><td>Raisonnement, agents, prompts, rapports, correction linguistique</td></tr>
-          <tr><td><span class="tag tag-green">Documents</span></td><td><strong>NotebookLM</strong></td><td>Organisation et synthèse de sources documentaires</td></tr>
-          <tr><td><span class="tag tag-blue">Multimodal</span></td><td><strong>Gemini API</strong></td><td>Images, audio, vidéo, documents longs</td></tr>
-          <tr><td><span class="tag tag-orange">Recherche</span></td><td><strong>Perplexity API</strong></td><td>Veille, tendances, sources vérifiées et actualités</td></tr>
-          <tr><td><span class="tag tag-green">Automatisation</span></td><td><strong>n8n</strong></td><td>Orchestration, webhooks, connexion entre outils</td></tr>
-          <tr><td><span class="tag tag-blue">Base de données</span></td><td><strong>Supabase</strong></td><td>PostgreSQL, auth, stockage fichiers, vecteurs (RAG)</td></tr>
-          <tr><td><span class="tag tag-orange">Agents</span></td><td><strong>CrewAI</strong></td><td>Équipes d'agents spécialisés avec rôles définis</td></tr>
-          <tr><td><span class="tag tag-green">Orchestration</span></td><td><strong>LangGraph</strong></td><td>Machines à états, routage conditionnel, boucles qualité</td></tr>
-          <tr><td><span class="tag tag-blue">Frontend</span></td><td><strong>React / Next.js</strong></td><td>Interface utilisateur, rendu statique ou serveur</td></tr>
-          <tr><td><span class="tag tag-orange">Backend</span></td><td><strong>Python / FastAPI</strong></td><td>Routes API, logique métier, intégrations</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="txt-index-2">La pile technologique</h2>
+<p data-i18n="txt-plateforme-400">Chaque outil joue un rôle précis. La logique <strong data-i18n="txt-index-75">ET</strong> : utiliser les deux quand c'est complémentaire.</p>
+</div>
+<div class="table-wrap" data-i18n="txt-plateforme-457">
+<table>
+<thead><tr><th>Couche</th><th>Outil</th><th>Rôle principal</th></tr></thead>
+<tbody>
+<tr><td><span class="tag tag-blue" data-i18n="txt-plateforme-431">IA principale</span></td><td><strong data-i18n="txt-plateforme-445">Claude API</strong></td><td>Raisonnement, agents, prompts, rapports, correction linguistique</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="txt-plateforme-432">Documents</span></td><td><strong data-i18n="txt-plateforme-446">NotebookLM</strong></td><td>Organisation et synthèse de sources documentaires</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="txt-plateforme-433">Multimodal</span></td><td><strong data-i18n="txt-plateforme-447">Gemini API</strong></td><td>Images, audio, vidéo, documents longs</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="txt-plateforme-434">Recherche</span></td><td><strong data-i18n="txt-plateforme-448">Perplexity API</strong></td><td>Veille, tendances, sources vérifiées et actualités</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="txt-plateforme-376">Automatisation</span></td><td><strong data-i18n="txt-plateforme-449">n8n</strong></td><td>Orchestration, webhooks, connexion entre outils</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="txt-index-67">Base de données</span></td><td><strong data-i18n="txt-plateforme-450">Supabase</strong></td><td>PostgreSQL, auth, stockage fichiers, vecteurs (RAG)</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="txt-index-65">Agents</span></td><td><strong data-i18n="txt-plateforme-451">CrewAI</strong></td><td>Équipes d'agents spécialisés avec rôles définis</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="txt-plateforme-435">Orchestration</span></td><td><strong data-i18n="txt-plateforme-452">LangGraph</strong></td><td>Machines à états, routage conditionnel, boucles qualité</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="txt-plateforme-436">Frontend</span></td><td><strong data-i18n="txt-plateforme-453">React / Next.js</strong></td><td>Interface utilisateur, rendu statique ou serveur</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="txt-plateforme-437">Backend</span></td><td><strong data-i18n="txt-plateforme-454">Python / FastAPI</strong></td><td>Routes API, logique métier, intégrations</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-
 <!-- AGENTS -->
 <section class="section section--light" id="agents">
-  <div class="container">
-    <div class="section-header">
-      <h2>Les 20 agents principaux</h2>
-      <p>L'orchestrateur sélectionne et séquence les autres à chaque demande.</p>
-    </div>
-    <div class="grid-3">
-      <div class="agent-card"><div class="agent-num">1</div><h4>Orchestrateur</h4><p>Pilote l'ensemble, sélectionne les agents, fusionne les résultats et produit la réponse finale.</p></div>
-      <div class="agent-card"><div class="agent-num">2</div><h4>Détection de fichiers</h4><p>Classifie le contenu déposé : CV, contrat, rapport, facture, code, image, tableau.</p></div>
-      <div class="agent-card"><div class="agent-num">3</div><h4>Linguistique</h4><p>Orthographe, grammaire, conjugaison, ponctuation, style et clarté.</p></div>
-      <div class="agent-card"><div class="agent-num">4</div><h4>Rapport automatique</h4><p>Transforme l'analyse en résumé exécutif + recommandations + plan d'action.</p></div>
-      <div class="agent-card"><div class="agent-num">5</div><h4>Qualité</h4><p>Détecte les contradictions, vérifie la cohérence et attribue un niveau de confiance.</p></div>
-      <div class="agent-card"><div class="agent-num">6</div><h4>Prompt Engineer</h4><p>Transforme une demande floue en prompt opérationnel précis.</p></div>
-      <div class="agent-card"><div class="agent-num">7</div><h4>Compétences / Skills</h4><p>Détecte les compétences existantes, manquantes, génère celles nécessaires.</p></div>
-      <div class="agent-card"><div class="agent-num">8</div><h4>Chef de projet</h4><p>Transforme l'idée en roadmap avec MVP, étapes et critères de succès.</p></div>
-      <div class="agent-card"><div class="agent-num">9</div><h4>UX / UI</h4><p>Conçoit le parcours utilisateur et la structure d'interface.</p></div>
-      <div class="agent-card"><div class="agent-num">10</div><h4>Sécurité &amp; Confidentialité</h4><p>Détecte les données sensibles, sécurise les accès et les clés API.</p></div>
-      <div class="agent-card"><div class="agent-num">11</div><h4>RGPD</h4><p>Vérifie consentement, conservation, suppression et conformité.</p></div>
-      <div class="agent-card"><div class="agent-num">12</div><h4>RH / Parcours</h4><p>Analyse CV, candidatures, prépare l'entretien et adapte le discours.</p></div>
-      <div class="agent-card"><div class="agent-num">13</div><h4>Psycholinguistique</h4><p>Analyse ton et style sans diagnostic — limité aux signaux textuels observables.</p></div>
-      <div class="agent-card"><div class="agent-num">14</div><h4>Prospective / Tendances</h4><p>Anticipe les évolutions, risques et opportunités avec niveau de confiance.</p></div>
-      <div class="agent-card"><div class="agent-num">15</div><h4>Recherche officielle</h4><p>Vérifie les sources institutionnelles, sépare fait et hypothèse.</p></div>
-      <div class="agent-card"><div class="agent-num">16</div><h4>Brevets</h4><p>Recherche brevets connus, analyse la proximité avec l'idée, signale les risques.</p></div>
-      <div class="agent-card"><div class="agent-num">17</div><h4>Commercial</h4><p>Transforme la solution en offre vendable avec argumentaire et tunnel de conversion.</p></div>
-      <div class="agent-card"><div class="agent-num">18</div><h4>Base de données / Mémoire</h4><p>Modélise les tables, relations et historiques du projet.</p></div>
-      <div class="agent-card"><div class="agent-num">19</div><h4>API / Automatisation</h4><p>Connecte les outils, définit les workflows et automatise les exports.</p></div>
-      <div class="agent-card"><div class="agent-num">20</div><h4>Documentation</h4><p>Produit la documentation utilisateur, technique et les guides d'utilisation.</p></div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="txt-plateforme-369">Les 20 agents principaux</h2>
+<p data-i18n="txt-plateforme-401">L'orchestrateur sélectionne et séquence les autres à chaque demande.</p>
+</div>
+<div class="grid-3">
+<div class="agent-card"><div class="agent-num">1</div><h4 data-i18n="txt-plateforme-380">Orchestrateur</h4><p data-i18n="txt-plateforme-402">Pilote l'ensemble, sélectionne les agents, fusionne les résultats et produit la réponse finale.</p></div>
+<div class="agent-card"><div class="agent-num">2</div><h4 data-i18n="txt-plateforme-381">Détection de fichiers</h4><p data-i18n="txt-plateforme-403">Classifie le contenu déposé : CV, contrat, rapport, facture, code, image, tableau.</p></div>
+<div class="agent-card"><div class="agent-num">3</div><h4 data-i18n="txt-plateforme-382">Linguistique</h4><p data-i18n="txt-plateforme-404">Orthographe, grammaire, conjugaison, ponctuation, style et clarté.</p></div>
+<div class="agent-card"><div class="agent-num">4</div><h4 data-i18n="txt-index-77">Rapport automatique</h4><p data-i18n="txt-plateforme-405">Transforme l'analyse en résumé exécutif + recommandations + plan d'action.</p></div>
+<div class="agent-card"><div class="agent-num">5</div><h4 data-i18n="txt-plateforme-383">Qualité</h4><p data-i18n="txt-plateforme-406">Détecte les contradictions, vérifie la cohérence et attribue un niveau de confiance.</p></div>
+<div class="agent-card"><div class="agent-num">6</div><h4 data-i18n="txt-plateforme-384">Prompt Engineer</h4><p data-i18n="txt-plateforme-407">Transforme une demande floue en prompt opérationnel précis.</p></div>
+<div class="agent-card"><div class="agent-num">7</div><h4 data-i18n="txt-plateforme-385">Compétences / Skills</h4><p data-i18n="txt-plateforme-408">Détecte les compétences existantes, manquantes, génère celles nécessaires.</p></div>
+<div class="agent-card"><div class="agent-num">8</div><h4 data-i18n="txt-plateforme-386">Chef de projet</h4><p data-i18n="txt-plateforme-409">Transforme l'idée en roadmap avec MVP, étapes et critères de succès.</p></div>
+<div class="agent-card"><div class="agent-num">9</div><h4 data-i18n="txt-plateforme-387">UX / UI</h4><p data-i18n="txt-plateforme-410">Conçoit le parcours utilisateur et la structure d'interface.</p></div>
+<div class="agent-card"><div class="agent-num">10</div><h4 data-i18n="txt-plateforme-388">Sécurité &amp; Confidentialité</h4><p data-i18n="txt-plateforme-411">Détecte les données sensibles, sécurise les accès et les clés API.</p></div>
+<div class="agent-card"><div class="agent-num">11</div><h4 data-i18n="txt-plateforme-389">RGPD</h4><p data-i18n="txt-plateforme-412">Vérifie consentement, conservation, suppression et conformité.</p></div>
+<div class="agent-card"><div class="agent-num">12</div><h4 data-i18n="txt-plateforme-390">RH / Parcours</h4><p data-i18n="txt-plateforme-413">Analyse CV, candidatures, prépare l'entretien et adapte le discours.</p></div>
+<div class="agent-card"><div class="agent-num">13</div><h4 data-i18n="txt-plateforme-391">Psycholinguistique</h4><p data-i18n="txt-plateforme-414">Analyse ton et style sans diagnostic — limité aux signaux textuels observables.</p></div>
+<div class="agent-card"><div class="agent-num">14</div><h4 data-i18n="txt-plateforme-392">Prospective / Tendances</h4><p data-i18n="txt-plateforme-415">Anticipe les évolutions, risques et opportunités avec niveau de confiance.</p></div>
+<div class="agent-card"><div class="agent-num">15</div><h4 data-i18n="txt-plateforme-393">Recherche officielle</h4><p data-i18n="txt-plateforme-416">Vérifie les sources institutionnelles, sépare fait et hypothèse.</p></div>
+<div class="agent-card"><div class="agent-num">16</div><h4 data-i18n="txt-plateforme-394">Brevets</h4><p data-i18n="txt-plateforme-417">Recherche brevets connus, analyse la proximité avec l'idée, signale les risques.</p></div>
+<div class="agent-card"><div class="agent-num">17</div><h4 data-i18n="txt-plateforme-395">Commercial</h4><p data-i18n="txt-plateforme-418">Transforme la solution en offre vendable avec argumentaire et tunnel de conversion.</p></div>
+<div class="agent-card"><div class="agent-num">18</div><h4 data-i18n="txt-plateforme-396">Base de données / Mémoire</h4><p data-i18n="txt-plateforme-419">Modélise les tables, relations et historiques du projet.</p></div>
+<div class="agent-card"><div class="agent-num">19</div><h4 data-i18n="txt-plateforme-397">API / Automatisation</h4><p data-i18n="txt-plateforme-420">Connecte les outils, définit les workflows et automatise les exports.</p></div>
+<div class="agent-card"><div class="agent-num">20</div><h4 data-i18n="txt-plateforme-398">Documentation</h4><p data-i18n="txt-plateforme-421">Produit la documentation utilisateur, technique et les guides d'utilisation.</p></div>
+</div>
+</div>
 </section>
-
 <!-- SCHÉMA SUPABASE -->
 <section class="section" id="schema">
-  <div class="container">
-    <div class="section-header">
-      <h2>Schéma de base de données</h2>
-      <p>Supabase — PostgreSQL avec authentification, stockage fichiers et vecteurs pour la mémoire RAG.</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Table</th><th>Contenu</th></tr></thead>
-        <tbody>
-          <tr><td><code>users</code></td><td>Comptes, rôles, droits et informations de profil</td></tr>
-          <tr><td><code>projects</code></td><td>Objectifs, statut, historique des projets analysés</td></tr>
-          <tr><td><code>files</code></td><td>Fichiers déposés, type, catégorie détectée, URL de stockage</td></tr>
-          <tr><td><code>agents</code></td><td>Agents disponibles, rôles, prompts, statut actif</td></tr>
-          <tr><td><code>skills</code></td><td>Compétences existantes, manquantes et générées</td></tr>
-          <tr><td><code>analyses</code></td><td>Résultats, agents utilisés, score de confiance</td></tr>
-          <tr><td><code>reports</code></td><td>Rapports finaux, synthèses, recommandations, livrables</td></tr>
-          <tr><td><code>sources</code></td><td>Sources officielles, références et vérifications</td></tr>
-          <tr><td><code>patents</code></td><td>Brevets connus, mots-clés, similarités</td></tr>
-          <tr><td><code>logs</code></td><td>Journal d'exécution, erreurs, tests et événements</td></tr>
-          <tr><td><code>workflows</code></td><td>Définitions des flux n8n</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="txt-plateforme-370">Schéma de base de données</h2>
+<p data-i18n="txt-plateforme-422">Supabase — PostgreSQL avec authentification, stockage fichiers et vecteurs pour la mémoire RAG.</p>
+</div>
+<div class="table-wrap" data-i18n="txt-plateforme-458">
+<table>
+<thead><tr><th>Table</th><th>Contenu</th></tr></thead>
+<tbody>
+<tr><td><code>users</code></td><td>Comptes, rôles, droits et informations de profil</td></tr>
+<tr><td><code>projects</code></td><td>Objectifs, statut, historique des projets analysés</td></tr>
+<tr><td><code>files</code></td><td>Fichiers déposés, type, catégorie détectée, URL de stockage</td></tr>
+<tr><td><code>agents</code></td><td>Agents disponibles, rôles, prompts, statut actif</td></tr>
+<tr><td><code>skills</code></td><td>Compétences existantes, manquantes et générées</td></tr>
+<tr><td><code>analyses</code></td><td>Résultats, agents utilisés, score de confiance</td></tr>
+<tr><td><code>reports</code></td><td>Rapports finaux, synthèses, recommandations, livrables</td></tr>
+<tr><td><code>sources</code></td><td>Sources officielles, références et vérifications</td></tr>
+<tr><td><code>patents</code></td><td>Brevets connus, mots-clés, similarités</td></tr>
+<tr><td><code>logs</code></td><td>Journal d'exécution, erreurs, tests et événements</td></tr>
+<tr><td><code>workflows</code></td><td>Définitions des flux n8n</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-
 <!-- ROADMAP -->
 <section class="section section--light" id="roadmap">
-  <div class="container">
-    <div class="section-header">
-      <h2>Roadmap de développement</h2>
-      <p>6 phases progressives — de la preuve de concept à la plateforme SaaS complète.</p>
-    </div>
-    <div class="roadmap">
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle active">1</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Noyau <span class="tag tag-orange" style="margin-left:8px;">En cours</span></h3><p>Orchestrateur, détection de fichiers, correction linguistique, rapport automatique, contrôle qualité.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">2</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Agents métiers</h3><p>Technique, juridique, financier, marketing, RH, commercial, sécurité.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">3</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Automatisation</h3><p>Connexion n8n + Supabase, formulaires, stockage et exports multi-formats.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">4</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Recherche avancée</h3><p>Sources officielles, veille concurrentielle, recherche de brevets, citations.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">5</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Plateforme SaaS</h3><p>Interface utilisateur, comptes, offres gratuites/payantes, documentation, support.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">6</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Multi-agents avancé</h3><p>CrewAI crews, LangGraph state machines, mémoire, boucles de contrôle et observabilité.</p></div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="txt-plateforme-371">Roadmap de développement</h2>
+<p data-i18n="txt-plateforme-423">6 phases progressives — de la preuve de concept à la plateforme SaaS complète.</p>
+</div>
+<div class="roadmap">
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle active">1</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="txt-plateforme-374">Noyau <span class="tag tag-orange" data-i18n="txt-plateforme-438" style="margin-left:8px;">En cours</span></h3><p data-i18n="txt-plateforme-424">Orchestrateur, détection de fichiers, correction linguistique, rapport automatique, contrôle qualité.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">2</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="txt-plateforme-375">Agents métiers</h3><p data-i18n="txt-plateforme-425">Technique, juridique, financier, marketing, RH, commercial, sécurité.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">3</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="txt-plateforme-376">Automatisation</h3><p data-i18n="txt-plateforme-426">Connexion n8n + Supabase, formulaires, stockage et exports multi-formats.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">4</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="txt-plateforme-377">Recherche avancée</h3><p data-i18n="txt-plateforme-427">Sources officielles, veille concurrentielle, recherche de brevets, citations.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">5</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="txt-plateforme-378">Plateforme SaaS</h3><p data-i18n="txt-plateforme-428">Interface utilisateur, comptes, offres gratuites/payantes, documentation, support.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">6</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="txt-plateforme-379">Multi-agents avancé</h3><p data-i18n="txt-plateforme-429">CrewAI crews, LangGraph state machines, mémoire, boucles de contrôle et observabilité.</p></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- FORMATS D'EXPORT -->
 <section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Formats d'export supportés</h2>
-    </div>
-    <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
-      <div class="tech-pill"><span class="tech-pill-icon">📝</span> TXT</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📋</span> Markdown</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📄</span> PDF</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📘</span> DOCX</div>
-      <div class="tech-pill"><span class="tech-pill-icon">🔧</span> JSON</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📊</span> CSV</div>
-      <div class="tech-pill"><span class="tech-pill-icon">🌐</span> HTML</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📦</span> ZIP</div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="txt-plateforme-372">Formats d'export supportés</h2>
+</div>
+<div data-i18n="txt-plateforme-459" style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+<div class="tech-pill" data-i18n="txt-plateforme-460"><span class="tech-pill-icon" data-i18n="txt-plateforme-439">📝</span> TXT</div>
+<div class="tech-pill" data-i18n="txt-plateforme-461"><span class="tech-pill-icon" data-i18n="txt-humanitaire-339">📋</span> Markdown</div>
+<div class="tech-pill" data-i18n="txt-plateforme-462"><span class="tech-pill-icon" data-i18n="txt-index-43">📄</span> PDF</div>
+<div class="tech-pill" data-i18n="txt-plateforme-463"><span class="tech-pill-icon" data-i18n="txt-plateforme-440">📘</span> DOCX</div>
+<div class="tech-pill" data-i18n="txt-plateforme-464"><span class="tech-pill-icon" data-i18n="txt-plateforme-441">🔧</span> JSON</div>
+<div class="tech-pill" data-i18n="txt-plateforme-465"><span class="tech-pill-icon" data-i18n="txt-plateforme-442">📊</span> CSV</div>
+<div class="tech-pill" data-i18n="txt-plateforme-466"><span class="tech-pill-icon" data-i18n="txt-index-44">🌐</span> HTML</div>
+<div class="tech-pill" data-i18n="txt-plateforme-467"><span class="tech-pill-icon" data-i18n="txt-plateforme-443">📦</span> ZIP</div>
+</div>
+</div>
 </section>
-
 <section class="cta-section">
-  <div class="container">
-    <h2>Prêt à construire ?</h2>
-    <p>Commencez avec la pile gratuite. Claude Free + NotebookLM + Supabase Free suffit pour le prototype.</p>
-    <a href="contact.html" class="btn" style="background:#fff; color:var(--secondary);">Nous contacter</a>
-  </div>
+<div class="container">
+<h2 data-i18n="txt-plateforme-373">Prêt à construire ?</h2>
+<p data-i18n="txt-plateforme-430">Commencez avec la pile gratuite. Claude Free + NotebookLM + Supabase Free suffit pour le prototype.</p>
+<a class="btn" data-i18n="txt-index-63" href="contact.html" style="background:#fff; color:var(--secondary);">Nous contacter</a>
+</div>
 </section>
-
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span style="color:var(--secondary);">.</span></div><p>Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
-      <div><h4>Plateforme</h4><ul><li><a href="plateforme.html">Architecture IA</a></li><li><a href="plateforme.html#agents">Agents</a></li><li><a href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
-      <div><h4>Aide</h4><ul><li><a href="humanitaire.html">Module humanitaire</a></li><li><a href="humanitaire.html#urgence">Urgences</a></li></ul></div>
-      <div><h4>Projet</h4><ul><li><a href="apropos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><span>© 2026 KIJ Platform</span><span>Construit sans API externe</span></div>
-  </div>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><div class="nav-logo" data-i18n="txt-apropos-178" style="color:#fff;"><div class="logo-icon" data-i18n="txt-index-84">K</div>KIJ<span style="color:var(--secondary);">.</span></div><p data-i18n="txt-index-29">Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
+<div><h4 data-i18n="txt-index-10">Plateforme</h4><ul><li data-i18n="txt-index-30"><a data-i18n="txt-index-64" href="plateforme.html">Architecture IA</a></li><li data-i18n="txt-index-31"><a data-i18n="txt-index-65" href="plateforme.html#agents">Agents</a></li><li data-i18n="txt-index-32"><a data-i18n="txt-index-66" href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
+<div><h4 data-i18n="txt-index-11">Aide</h4><ul><li data-i18n="txt-index-34"><a data-i18n="txt-index-68" href="humanitaire.html">Module humanitaire</a></li><li data-i18n="txt-apropos-152"><a data-i18n="txt-apropos-160" href="humanitaire.html#urgence">Urgences</a></li></ul></div>
+<div><h4 data-i18n="txt-index-12">Projet</h4><ul><li data-i18n="txt-index-38"><a data-i18n="txt-index-58" href="apropos.html">À propos</a></li><li data-i18n="txt-index-41"><a data-i18n="txt-index-59" href="contact.html">Contact</a></li></ul></div>
+</div>
+<div class="footer-bottom" data-i18n="txt-plateforme-468"><span data-i18n="txt-apropos-156">© 2026 KIJ Platform</span><span data-i18n="txt-plateforme-444">Construit sans API externe</span></div>
+</div>
 </footer>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
