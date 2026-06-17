@@ -13,15 +13,30 @@
     <nav class="nav">
       <a href="index.html" class="nav-logo"><div class="logo-icon">K</div>KIJ<span>.</span></a>
       <div class="nav-links">
-        <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta active">Contact</a>
+        <a href="index.html" data-i18n="nav-home">Accueil</a>
+        <a href="plateforme.html" data-i18n="nav-platform">Plateforme IA</a>
+        <a href="humanitaire.html" data-i18n="nav-humanitarian">Aide humanitaire</a>
+        <a href="apropos.html" data-i18n="nav-about">À propos</a>
+        <a href="contact.html" class="nav-cta active" data-i18n="nav-contact">Contact</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="fr" data-i18n="lang-fr">FR</button>
+          <span>|</span>
+          <button class="lang-btn" data-lang="en" data-i18n="lang-en">EN</button>
+        </div>
       </div>
       <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </nav>
     <nav class="mobile-menu">
-      <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav-home">Accueil</a>
+      <a href="plateforme.html" data-i18n="nav-platform">Plateforme IA</a>
+      <a href="humanitaire.html" data-i18n="nav-humanitarian">Aide humanitaire</a>
+      <a href="apropos.html" data-i18n="nav-about">À propos</a>
+      <a href="contact.html" data-i18n="nav-contact">Contact</a>
+      <div class="lang-switcher" style="padding: 10px 12px; display: flex; gap: 8px; justify-content: flex-start;">
+        <button class="lang-btn" data-lang="fr" data-i18n="lang-fr" style="background:none; border:none; color:var(--text); cursor:pointer; font-weight:bold;">FR</button>
+        <span style="color:var(--text-muted);">|</span>
+        <button class="lang-btn" data-lang="en" data-i18n="lang-en" style="background:none; border:none; color:var(--text); cursor:pointer;">EN</button>
+      </div>
     </nav>
   </div>
 </header>
@@ -149,6 +164,7 @@
     <div class="footer-bottom"><span>© 2026 KIJ Platform</span><span>Formulaire local — aucune donnée transmise</span></div>
   </div>
 </footer>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
