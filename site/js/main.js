@@ -63,6 +63,42 @@
     });
   }
 
+  // === CHAT (chat.html) ===
+  const chatInput = document.getElementById('messageInput');
+  const chatMessages = document.getElementById('chatMessages');
+  const chatSend = document.getElementById('chatSend');
+
+  if (chatInput && chatMessages) {
+    const sendMessage = () => {
+      const text = chatInput.value.trim();
+      if (!text) return;
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'message user';
+      userMsg.textContent = text;
+      chatMessages.appendChild(userMsg);
+
+      chatInput.value = '';
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      setTimeout(() => {
+        const aiMsg = document.createElement('div');
+        aiMsg.className = 'message ai';
+        aiMsg.textContent = 'Je suis Ultratech AI 🤖';
+        chatMessages.appendChild(aiMsg);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 500);
+    };
+
+    if (chatSend) chatSend.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+  }
+
   // === SMOOTH REVEAL ON SCROLL ===
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
