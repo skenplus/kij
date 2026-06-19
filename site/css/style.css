@@ -384,3 +384,98 @@ textarea { resize: vertical; min-height: 120px; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
 }
+
+/* ========================================
+   Language Switcher
+   ======================================== */
+.lang-selector {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.lang-switcher {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  color: var(--text);
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+.lang-switcher:hover, .lang-switcher:focus {
+  border-color: var(--primary);
+}
+
+/* ========================================
+   Arcade Animation (Pac-Man & Ghost)
+   ======================================== */
+.arcade-animation-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.pacman {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f1c40f;
+  position: absolute;
+  bottom: 10px;
+  left: -40px;
+  animation: move-arcade 15s linear infinite;
+  clip-path: polygon(100% 74%, 44% 48%, 100% 21%, 100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.ghost {
+  width: 20px;
+  height: 20px;
+  background: #e74c3c;
+  position: absolute;
+  bottom: 10px;
+  left: -80px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  animation: move-arcade 15s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.ghost::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #e74c3c;
+  clip-path: polygon(0 0, 25% 100%, 50% 0, 75% 100%, 100% 0);
+}
+
+.ghost::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 8px 0 0 white;
+}
+
+@keyframes move-arcade {
+  0% { left: -100px; transform: scaleX(1); }
+  45% { left: 110%; transform: scaleX(1); }
+  50% { left: 110%; transform: scaleX(-1); }
+  95% { left: -100px; transform: scaleX(-1); }
+  100% { left: -100px; transform: scaleX(1); }
+}

@@ -18,21 +18,29 @@
         KIJ<span>.</span>
       </a>
       <div class="nav-links">
-        <a href="index.html" class="active">Accueil</a>
-        <a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav-accueil">Accueil</a>
+        <a href="plateforme.html" data-i18n="nav-plateforme">Plateforme IA</a>
+        <a href="humanitaire.html" data-i18n="nav-humanitaire">Aide humanitaire</a>
+        <a href="apropos.html" data-i18n="nav-apropos">À propos</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav-contact">Contact</a>
+      </div>
+
+      <div class="lang-selector">
+        <select class="lang-switcher">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
       </div>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
     <nav class="mobile-menu">
-      <a href="index.html">Accueil</a>
-      <a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a>
-      <a href="apropos.html">À propos</a>
+      <a href="index.html" data-i18n="nav-accueil">Accueil</a>
+      <a href="plateforme.html" data-i18n="nav-plateforme">Plateforme IA</a>
+      <a href="humanitaire.html" data-i18n="nav-humanitaire">Aide humanitaire</a>
+      <a href="apropos.html" data-i18n="nav-apropos">À propos</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
@@ -41,12 +49,12 @@
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero-badge">✦ Intelligence artificielle &amp; impact social</div>
-    <h1>L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
-    <p>KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
+    <div class="hero-badge" data-i18n="hero-badge">✦ Intelligence artificielle &amp; impact social</div>
+    <h1 data-i18n="hero-title">L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
+    <p data-i18n="hero-desc">KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
     <div class="hero-actions">
-      <a href="plateforme.html" class="btn btn-primary">Découvrir la plateforme →</a>
-      <a href="humanitaire.html" class="btn btn-outline">Module humanitaire</a>
+      <a href="plateforme.html" class="btn btn-primary" data-i18n="hero-btn-primary">Découvrir la plateforme →</a>
+      <a href="humanitaire.html" class="btn btn-outline" data-i18n="hero-btn-secondary">Module humanitaire</a>
     </div>
     <div class="hero-sub">
       <div class="hero-stat">
@@ -226,7 +234,7 @@
       <div>
         <h4>Projet</h4>
         <ul>
-          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="apropos.html" data-i18n="nav-apropos">À propos</a></li>
           <li><a href="apropos.html#valeurs">Valeurs</a></li>
           <li><a href="apropos.html#ethique">Éthique</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -238,8 +246,16 @@
       <span>Construit sans API externe · <a href="apropos.html#ethique">Éthique &amp; RGPD</a></span>
     </div>
   </div>
+
+<!-- VIDEO GAME ANIMATION -->
+<div class="arcade-animation-container">
+  <div class="pacman"></div>
+  <div class="ghost"></div>
+</div>
+
 </footer>
 
 <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
