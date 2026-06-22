@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat — KIJ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">K</div>KIJ<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="plateforme.html">Plateforme IA</a>
+        <a href="humanitaire.html">Aide humanitaire</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+    <nav class="mobile-menu">
+      <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
+      <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Chat</span></nav>
+    <h1>Chat de démonstration</h1>
+    <p>Interface conversationnelle — démo locale, sans connexion API.</p>
+  </div>
+</section>
+
+<div class="chat-wrap">
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="logo-icon">K</div>
+      <span>Ultratech AI</span>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="message ai">Bonjour 👋 Posez-moi une question pour commencer.</div>
+    </div>
+    <div class="chat-input-row">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Tapez votre message…"
+        autocomplete="off"
+      />
+      <button id="chatSend" class="btn btn-primary btn-sm">Envoyer</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom"><span>© 2026 KIJ Platform</span><span>Démo chat locale</span></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

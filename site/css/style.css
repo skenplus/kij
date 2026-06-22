@@ -76,6 +76,11 @@ p  { color: var(--text); }
   width: 36px; height: 36px; background: var(--primary);
   border-radius: 8px; display: flex; align-items: center; justify-content: center;
   color: var(--white); font-weight: 900; font-size: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
 }
 .nav-links { display: flex; align-items: center; gap: 4px; }
 .nav-links a {
@@ -358,6 +363,59 @@ textarea { resize: vertical; min-height: 120px; }
 .page-hero .breadcrumb a { color: rgba(255,255,255,.85); }
 .page-hero h1 { color: var(--white); margin-top: 10px; }
 .page-hero p  { color: rgba(255,255,255,.75); font-size: 1.05rem; margin-top: 10px; max-width: 600px; }
+
+/* === CHAT === */
+.chat-wrap {
+  max-width: 720px; margin: 40px auto; padding: 0 24px;
+}
+.chat-container {
+  display: flex; flex-direction: column;
+  height: 70vh; min-height: 480px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.chat-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  color: var(--white); font-weight: 600;
+  display: flex; align-items: center; gap: 10px;
+}
+.chat-messages {
+  flex: 1; overflow-y: auto;
+  padding: 20px; display: flex; flex-direction: column; gap: 10px;
+}
+.message {
+  max-width: 75%; padding: 10px 14px;
+  border-radius: 14px; font-size: .95rem; line-height: 1.5;
+  word-wrap: break-word; white-space: pre-wrap;
+}
+.message.user {
+  align-self: flex-end;
+  background: var(--secondary); color: var(--white);
+  border-bottom-right-radius: 4px;
+}
+.message.ai {
+  align-self: flex-start;
+  background: rgba(255,255,255,.10); color: var(--white);
+  border-bottom-left-radius: 4px;
+}
+.chat-input-row {
+  display: flex; gap: 8px; padding: 14px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: rgba(15,23,42,.4);
+}
+.chat-input-row input {
+  flex: 1; background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  color: var(--white);
+}
+.chat-input-row input::placeholder { color: rgba(255,255,255,.5); }
+.chat-input-row input:focus { border-color: var(--secondary); }
 
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
