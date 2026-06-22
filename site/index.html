@@ -18,52 +18,61 @@
         KIJ<span>.</span>
       </a>
       <div class="nav-links">
-        <a href="index.html" class="active">Accueil</a>
-        <a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav.home">Accueil</a>
+        <a href="plateforme.html" data-i18n="nav.platform">Plateforme IA</a>
+        <a href="humanitaire.html" data-i18n="nav.humanitarian">Aide humanitaire</a>
+        <a href="apropos.html" data-i18n="nav.about">À propos</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="lang-switcher">
+        <button data-lang="fr">FR</button>
+        <button data-lang="en">EN</button>
       </div>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
     <nav class="mobile-menu">
-      <a href="index.html">Accueil</a>
-      <a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a>
-      <a href="apropos.html">À propos</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="plateforme.html" data-i18n="nav.platform">Plateforme IA</a>
+      <a href="humanitaire.html" data-i18n="nav.humanitarian">Aide humanitaire</a>
+      <a href="apropos.html" data-i18n="nav.about">À propos</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switcher">
+        <button data-lang="fr">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-badge">✦ Intelligence artificielle &amp; impact social</div>
-    <h1>L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
-    <p>KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
+  <canvas id="gameCanvas"></canvas>
+  <div class="container" style="position: relative; z-index: 10;">
+    <div class="hero-badge" data-i18n="hero.badge">✦ Intelligence artificielle &amp; impact social</div>
+    <h1 data-i18n="hero.title">L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
+    <p data-i18n="hero.desc">KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
     <div class="hero-actions">
-      <a href="plateforme.html" class="btn btn-primary">Découvrir la plateforme →</a>
-      <a href="humanitaire.html" class="btn btn-outline">Module humanitaire</a>
+      <a href="plateforme.html" class="btn btn-primary" data-i18n="hero.btn.primary">Découvrir la plateforme →</a>
+      <a href="humanitaire.html" class="btn btn-outline" data-i18n="hero.btn.outline">Module humanitaire</a>
     </div>
     <div class="hero-sub">
       <div class="hero-stat">
         <strong>20</strong>
-        <span>Agents principaux</span>
+        <span data-i18n="hero.stat.agents">Agents principaux</span>
       </div>
       <div class="hero-stat">
         <strong>36</strong>
-        <span>Sous-agents spécialisés</span>
+        <span data-i18n="hero.stat.subagents">Sous-agents spécialisés</span>
       </div>
       <div class="hero-stat">
         <strong>8</strong>
-        <span>Outils connectés</span>
+        <span data-i18n="hero.stat.tools">Outils connectés</span>
       </div>
       <div class="hero-stat">
         <strong>8</strong>
-        <span>Formats d'export</span>
+        <span data-i18n="hero.stat.exports">Formats d'export</span>
       </div>
     </div>
   </div>
@@ -73,31 +82,31 @@
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2>Deux modules complémentaires</h2>
-      <p>Une même architecture IA, deux applications concrètes — et la logique <strong>ET</strong> : les deux toujours.</p>
+      <h2 data-i18n="modules.title">Deux modules complémentaires</h2>
+      <p data-i18n="modules.desc">Une même architecture IA, deux applications concrètes — et la logique <strong>ET</strong> : les deux toujours.</p>
     </div>
     <div class="grid-2">
       <div class="card" style="border-top: 4px solid var(--primary);">
         <div class="card-icon icon-blue">🤖</div>
-        <h3>Plateforme IA multi-agents</h3>
-        <p>Analyse de documents, génération de rapports, correction linguistique, veille, brevets et livrables professionnels — orchestrés par 20 agents spécialisés.</p>
+        <h3 data-i18n="modules.plat.title">Plateforme IA multi-agents</h3>
+        <p data-i18n="modules.plat.desc">Analyse de documents, génération de rapports, correction linguistique, veille, brevets et livrables professionnels — orchestrés par 20 agents spécialisés.</p>
         <ul class="feature-list" style="margin-top:16px;">
-          <li class="feature-item"><div class="feature-dot"></div><div><strong>Analyse intelligente</strong><p>CV, contrats, rapports, factures, images, tableaux</p></div></li>
-          <li class="feature-item"><div class="feature-dot"></div><div><strong>Rapport automatique</strong><p>Résumé exécutif + plan d'action structuré</p></div></li>
-          <li class="feature-item"><div class="feature-dot"></div><div><strong>Sources officielles</strong><p>Vérification, brevets, veille marché</p></div></li>
+          <li class="feature-item"><div class="feature-dot"></div><div><strong data-i18n="modules.plat.feat1.title">Analyse intelligente</strong><p data-i18n="modules.plat.feat1.desc">CV, contrats, rapports, factures, images, tableaux</p></div></li>
+          <li class="feature-item"><div class="feature-dot"></div><div><strong data-i18n="modules.plat.feat2.title">Rapport automatique</strong><p data-i18n="modules.plat.feat2.desc">Résumé exécutif + plan d'action structuré</p></div></li>
+          <li class="feature-item"><div class="feature-dot"></div><div><strong data-i18n="modules.plat.feat3.title">Sources officielles</strong><p data-i18n="modules.plat.feat3.desc">Vérification, brevets, veille marché</p></div></li>
         </ul>
-        <a href="plateforme.html" class="btn btn-dark btn-sm" style="margin-top:24px;">Explorer →</a>
+        <a href="plateforme.html" class="btn btn-dark btn-sm" style="margin-top:24px;" data-i18n="modules.plat.btn">Explorer →</a>
       </div>
       <div class="card" style="border-top: 4px solid var(--secondary);">
         <div class="card-icon icon-orange">🤝</div>
-        <h3>Module aide humanitaire &amp; pro</h3>
-        <p>Accompagnement des personnes en situation de vulnérabilité : emploi, logement, santé, droits, formation et soutien psychosocial — sans jugement, avec dignité.</p>
+        <h3 data-i18n="modules.hum.title">Module aide humanitaire &amp; pro</h3>
+        <p data-i18n="modules.hum.desc">Accompagnement des personnes en situation de vulnérabilité : emploi, logement, santé, droits, formation et soutien psychosocial — sans jugement, avec dignité.</p>
         <ul class="feature-list" style="margin-top:16px;">
-          <li class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div><strong>Orientation multi-domaines</strong><p>Juridique, logement, santé, social, administratif</p></div></li>
-          <li class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div><strong>CV, lettres &amp; dossiers</strong><p>Rédigés et personnalisés selon la situation</p></div></li>
-          <li class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div><strong>Plan d'action concret</strong><p>Aujourd'hui / 30 jours / moyen terme</p></div></li>
+          <li class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div><strong data-i18n="modules.hum.feat1.title">Orientation multi-domaines</strong><p data-i18n="modules.hum.feat1.desc">Juridique, logement, santé, social, administratif</p></div></li>
+          <li class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div><strong data-i18n="modules.hum.feat2.title">CV, lettres &amp; dossiers</strong><p data-i18n="modules.hum.feat2.desc">Rédigés et personnalisés selon la situation</p></div></li>
+          <li class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div><strong data-i18n="modules.hum.feat3.title">Plan d'action concret</strong><p data-i18n="modules.hum.feat3.desc">Aujourd'hui / 30 jours / moyen terme</p></div></li>
         </ul>
-        <a href="humanitaire.html" class="btn btn-primary btn-sm" style="margin-top:24px;">Découvrir →</a>
+        <a href="humanitaire.html" class="btn btn-primary btn-sm" style="margin-top:24px;" data-i18n="modules.hum.btn">Découvrir →</a>
       </div>
     </div>
   </div>
@@ -107,37 +116,37 @@
 <section class="section section--light">
   <div class="container">
     <div class="section-header">
-      <h2>Comment ça fonctionne</h2>
-      <p>Du dépôt de fichier ou de la demande au rapport final — en automatique.</p>
+      <h2 data-i18n="steps.title">Comment ça fonctionne</h2>
+      <p data-i18n="steps.desc">Du dépôt de fichier ou de la demande au rapport final — en automatique.</p>
     </div>
     <div class="grid-2" style="align-items:center; gap:56px;">
       <div class="steps">
         <div class="step">
           <div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div>
           <div class="step-body">
-            <h3>Dépôt ou demande</h3>
-            <p>L'utilisateur envoie un fichier, une question ou remplit un formulaire. n8n reçoit et route automatiquement.</p>
+            <h3 data-i18n="steps.s1.title">Dépôt ou demande</h3>
+            <p data-i18n="steps.s1.desc">L'utilisateur envoie un fichier, une question ou remplit un formulaire. n8n reçoit et route automatiquement.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div>
           <div class="step-body">
-            <h3>Analyse et détection</h3>
-            <p>Claude corrige la demande, Gemini lit les fichiers lourds, Perplexity vérifie les informations récentes.</p>
+            <h3 data-i18n="steps.s2.title">Analyse et détection</h3>
+            <p data-i18n="steps.s2.desc">Claude corrige la demande, Gemini lit les fichiers lourds, Perplexity vérifie les informations récentes.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-left"><div class="step-num">3</div><div class="step-line"></div></div>
           <div class="step-body">
-            <h3>Agents spécialisés</h3>
-            <p>L'orchestrateur active les bons agents (juridique, linguistique, emploi, qualité…) selon le contenu détecté.</p>
+            <h3 data-i18n="steps.s3.title">Agents spécialisés</h3>
+            <p data-i18n="steps.s3.desc">L'orchestrateur active les bons agents (juridique, linguistique, emploi, qualité…) selon le contenu détecté.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-left"><div class="step-num">4</div><div class="step-line"></div></div>
           <div class="step-body">
-            <h3>Livrable &amp; rapport</h3>
-            <p>Supabase stocke tout. Le rapport final est livré par email, PDF ou tableau de bord — avec niveau de confiance.</p>
+            <h3 data-i18n="steps.s4.title">Livrable &amp; rapport</h3>
+            <p data-i18n="steps.s4.desc">Supabase stocke tout. Le rapport final est livré par email, PDF ou tableau de bord — avec niveau de confiance.</p>
           </div>
         </div>
       </div>
@@ -164,8 +173,8 @@
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2>La pile technologique</h2>
-      <p>Huit outils complémentaires, une logique <strong>ET</strong> : tous activés selon le besoin.</p>
+      <h2 data-i18n="stack.title">La pile technologique</h2>
+      <p data-i18n="stack.desc">Huit outils complémentaires, une logique <strong>ET</strong> : tous activés selon le besoin.</p>
     </div>
     <div class="tech-grid" style="justify-content:center;">
       <div class="tech-pill"><span class="tech-pill-icon">🧠</span> Claude API</div>
@@ -185,11 +194,11 @@
 <!-- CTA -->
 <section class="cta-section">
   <div class="container">
-    <h2>Prêt à construire la plateforme ?</h2>
-    <p>Démarrez avec la pile gratuite. Ajoutez les outils payants quand les limites arrivent.</p>
+    <h2 data-i18n="cta.title">Prêt à construire la plateforme ?</h2>
+    <p data-i18n="cta.desc">Démarrez avec la pile gratuite. Ajoutez les outils payants quand les limites arrivent.</p>
     <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
-      <a href="plateforme.html" class="btn btn-outline">Voir l'architecture complète</a>
-      <a href="contact.html" class="btn" style="background:#fff; color:var(--secondary);">Nous contacter</a>
+      <a href="plateforme.html" class="btn btn-outline" data-i18n="cta.btn.outline">Voir l'architecture complète</a>
+      <a href="contact.html" class="btn" style="background:#fff; color:var(--secondary);" data-i18n="cta.btn.primary">Nous contacter</a>
     </div>
   </div>
 </section>
@@ -203,43 +212,45 @@
           <div class="logo-icon">K</div>
           KIJ<span style="color:var(--secondary);">.</span>
         </div>
-        <p>Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p>
+        <p data-i18n="footer.brand.desc">Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p>
       </div>
       <div>
-        <h4>Plateforme</h4>
+        <h4 data-i18n="footer.nav.plat">Plateforme</h4>
         <ul>
-          <li><a href="plateforme.html">Architecture IA</a></li>
-          <li><a href="plateforme.html#agents">Agents</a></li>
-          <li><a href="plateforme.html#roadmap">Roadmap</a></li>
-          <li><a href="plateforme.html#schema">Base de données</a></li>
+          <li><a href="plateforme.html" data-i18n="footer.nav.plat.arch">Architecture IA</a></li>
+          <li><a href="plateforme.html#agents" data-i18n="footer.nav.plat.agents">Agents</a></li>
+          <li><a href="plateforme.html#roadmap" data-i18n="footer.nav.plat.roadmap">Roadmap</a></li>
+          <li><a href="plateforme.html#schema" data-i18n="footer.nav.plat.db">Base de données</a></li>
         </ul>
       </div>
       <div>
-        <h4>Aide</h4>
+        <h4 data-i18n="footer.nav.help">Aide</h4>
         <ul>
-          <li><a href="humanitaire.html">Module humanitaire</a></li>
-          <li><a href="humanitaire.html#services">Services</a></li>
-          <li><a href="humanitaire.html#urgence">Numéros d'urgence</a></li>
-          <li><a href="humanitaire.html#ressources">Ressources</a></li>
+          <li><a href="humanitaire.html" data-i18n="footer.nav.help.mod">Module humanitaire</a></li>
+          <li><a href="humanitaire.html#services" data-i18n="footer.nav.help.services">Services</a></li>
+          <li><a href="humanitaire.html#urgence" data-i18n="footer.nav.help.urgency">Numéros d'urgence</a></li>
+          <li><a href="humanitaire.html#ressources" data-i18n="footer.nav.help.resources">Ressources</a></li>
         </ul>
       </div>
       <div>
-        <h4>Projet</h4>
+        <h4 data-i18n="footer.nav.proj">Projet</h4>
         <ul>
-          <li><a href="apropos.html">À propos</a></li>
-          <li><a href="apropos.html#valeurs">Valeurs</a></li>
-          <li><a href="apropos.html#ethique">Éthique</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="apropos.html" data-i18n="footer.nav.proj.about">À propos</a></li>
+          <li><a href="apropos.html#valeurs" data-i18n="footer.nav.proj.values">Valeurs</a></li>
+          <li><a href="apropos.html#ethique" data-i18n="footer.nav.proj.ethics">Éthique</a></li>
+          <li><a href="contact.html" data-i18n="footer.nav.proj.contact">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 KIJ Platform — Tous droits réservés</span>
-      <span>Construit sans API externe · <a href="apropos.html#ethique">Éthique &amp; RGPD</a></span>
+      <span data-i18n="footer.bottom.rights">© 2026 KIJ Platform — Tous droits réservés</span>
+      <span data-i18n="footer.bottom.ethics">Construit sans API externe · <a href="apropos.html#ethique">Éthique &amp; RGPD</a></span>
     </div>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script src="js/game-anim.js"></script>
 </body>
 </html>
