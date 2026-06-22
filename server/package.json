@@ -1,0 +1,19 @@
+{
+  "name": "kij-chat-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend du widget de chat IA du site KIJ, propulsé par l'API Claude (Anthropic).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.105.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2"
+  }
+}
