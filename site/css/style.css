@@ -384,3 +384,52 @@ textarea { resize: vertical; min-height: 120px; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
 }
+
+/* === LANG SWITCHER === */
+.lang-switcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: 16px;
+}
+.lang-switcher button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all var(--transition);
+}
+.lang-switcher button:hover {
+  background: var(--light);
+  color: var(--primary);
+}
+.lang-switcher button.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+@media (max-width: 768px) {
+  .lang-switcher {
+    margin-top: 16px;
+    justify-content: center;
+  }
+}
+
+/* === HERO GAME CANVAS === */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+#gameCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.15;
+  pointer-events: none;
+}
