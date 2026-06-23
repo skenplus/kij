@@ -6,6 +6,8 @@
 (function () {
   'use strict';
 
+   alert("CHAT CHARGE");
+   
   // Remplacer par l'URL du backend une fois déployé sur Render.
   // Voir server/README.md pour les instructions de déploiement.
   const API_BASE_URL = window.KIJ_CHAT_API_URL || 'https://kij-chat-server.onrender.com';
