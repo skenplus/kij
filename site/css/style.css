@@ -113,6 +113,62 @@ p  { color: var(--text); }
 .mobile-menu a:hover { background: var(--light); }
 .mobile-menu.open { display: flex; }
 
+/* === PACMAN ANIMATION === */
+.pacman-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.pacman {
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fbb35a;
+  border-left: 20px solid #fbb35a;
+  border-bottom: 20px solid #fbb35a;
+  border-radius: 50%;
+  animation: movePacman 10s linear infinite, chomp 0.4s ease-in-out infinite alternate;
+}
+
+.dot {
+  position: absolute;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.dot:nth-child(2) { left: 20%; animation: eatDot 10s linear infinite; animation-delay: 1.5s; }
+.dot:nth-child(3) { left: 40%; animation: eatDot 10s linear infinite; animation-delay: 3.5s; }
+.dot:nth-child(4) { left: 60%; animation: eatDot 10s linear infinite; animation-delay: 5.5s; }
+.dot:nth-child(5) { left: 80%; animation: eatDot 10s linear infinite; animation-delay: 7.5s; }
+.dot:nth-child(6) { left: 100%; animation: eatDot 10s linear infinite; animation-delay: 9.5s; }
+
+@keyframes movePacman {
+  0% { left: -60px; }
+  100% { left: 110%; }
+}
+
+@keyframes chomp {
+  0% { border-right: 20px solid transparent; }
+  100% { border-right: 20px solid #fbb35a; }
+}
+
+@keyframes eatDot {
+  0%, 99% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 /* === HERO === */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, #2454a0 60%, #1a4a8c 100%);
@@ -452,4 +508,18 @@ textarea { resize: vertical; min-height: 120px; }
   .grid-4 { grid-template-columns: 1fr; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
+}
+
+/* Language Switcher */
+.lang-btn {
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.lang-btn.active {
+  background: var(--light);
+  font-weight: bold;
 }
