@@ -18,11 +18,16 @@
         KIJ<span>.</span>
       </a>
       <div class="nav-links">
-        <a href="index.html" class="active">Accueil</a>
-        <a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav_home">Accueil</a>
+        <a href="plateforme.html" data-i18n="nav_platform">Plateforme IA</a>
+        <a href="humanitaire.html" data-i18n="nav_humanitarian">Aide humanitaire</a>
+        <a href="apropos.html" data-i18n="nav_about">À propos</a>
+        <div class="lang-switcher">
+          <button data-lang="fr" class="active">FR</button> <span class="lang-sep">|</span>
+          <button data-lang="en">EN</button>
+        </div>
+        <button id="gaming-mode-btn" title="Mode Rétro">🕹️</button>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact</a>
       </div>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -30,9 +35,9 @@
     </nav>
     <nav class="mobile-menu">
       <a href="index.html">Accueil</a>
-      <a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a>
-      <a href="apropos.html">À propos</a>
+      <a href="plateforme.html" data-i18n="nav_platform">Plateforme IA</a>
+      <a href="humanitaire.html" data-i18n="nav_humanitarian">Aide humanitaire</a>
+      <a href="apropos.html" data-i18n="nav_about">À propos</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
@@ -41,29 +46,29 @@
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <div class="hero-badge">✦ Intelligence artificielle &amp; impact social</div>
-    <h1>L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
-    <p>KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
+    <div class="hero-badge" data-i18n="hero_badge">✦ Intelligence artificielle &amp; impact social</div>
+    <h1 data-i18n="hero_title">L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
+    <p data-i18n="hero_desc">KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
     <div class="hero-actions">
-      <a href="plateforme.html" class="btn btn-primary">Découvrir la plateforme →</a>
-      <a href="humanitaire.html" class="btn btn-outline">Module humanitaire</a>
+      <a href="plateforme.html" class="btn btn-primary" data-i18n="hero_btn_platform">Découvrir la plateforme →</a>
+      <a href="humanitaire.html" class="btn btn-outline" data-i18n="hero_btn_humanitarian">Module humanitaire</a>
     </div>
     <div class="hero-sub">
       <div class="hero-stat">
         <strong>20</strong>
-        <span>Agents principaux</span>
+        <span data-i18n="stat_1">Agents principaux</span>
       </div>
       <div class="hero-stat">
         <strong>36</strong>
-        <span>Sous-agents spécialisés</span>
+        <span data-i18n="stat_2">Sous-agents spécialisés</span>
       </div>
       <div class="hero-stat">
         <strong>8</strong>
-        <span>Outils connectés</span>
+        <span data-i18n="stat_3">Outils connectés</span>
       </div>
       <div class="hero-stat">
         <strong>8</strong>
-        <span>Formats d'export</span>
+        <span data-i18n="stat_4">Formats d'export</span>
       </div>
     </div>
   </div>
@@ -73,14 +78,14 @@
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2>Deux modules complémentaires</h2>
-      <p>Une même architecture IA, deux applications concrètes — et la logique <strong>ET</strong> : les deux toujours.</p>
+      <h2 data-i18n="section_2_title">Deux modules complémentaires</h2>
+      <p data-i18n="section_2_desc">Une même architecture IA, deux applications concrètes — et la logique <strong>ET</strong> : les deux toujours.</p>
     </div>
     <div class="grid-2">
       <div class="card" style="border-top: 4px solid var(--primary);">
         <div class="card-icon icon-blue">🤖</div>
-        <h3>Plateforme IA multi-agents</h3>
-        <p>Analyse de documents, génération de rapports, correction linguistique, veille, brevets et livrables professionnels — orchestrés par 20 agents spécialisés.</p>
+        <h3 data-i18n="card_1_title">Plateforme IA multi-agents</h3>
+        <p data-i18n="card_1_desc">Analyse de documents, génération de rapports, correction linguistique, veille, brevets et livrables professionnels — orchestrés par 20 agents spécialisés.</p>
         <ul class="feature-list" style="margin-top:16px;">
           <li class="feature-item"><div class="feature-dot"></div><div><strong>Analyse intelligente</strong><p>CV, contrats, rapports, factures, images, tableaux</p></div></li>
           <li class="feature-item"><div class="feature-dot"></div><div><strong>Rapport automatique</strong><p>Résumé exécutif + plan d'action structuré</p></div></li>
@@ -226,7 +231,7 @@
       <div>
         <h4>Projet</h4>
         <ul>
-          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="apropos.html" data-i18n="nav_about">À propos</a></li>
           <li><a href="apropos.html#valeurs">Valeurs</a></li>
           <li><a href="apropos.html#ethique">Éthique</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -240,7 +245,8 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 <script src="js/chat-widget.js"></script>
 </body>
 </html>
