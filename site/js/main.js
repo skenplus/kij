@@ -114,3 +114,32 @@
   topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 })();
+
+  // === GAMING MODE ANIMATION ===
+  const gamingBtn = document.getElementById('gaming-mode-btn');
+  if (gamingBtn) {
+    gamingBtn.addEventListener('click', () => {
+      // Prevent multiple clicks from starting multiple animations
+      if (document.querySelector('.gaming-container')) return;
+
+      const container = document.createElement('div');
+      container.className = 'gaming-container';
+
+      const pacman = document.createElement('div');
+      pacman.className = 'pacman';
+
+      const ghost = document.createElement('div');
+      ghost.className = 'ghost';
+
+      container.appendChild(pacman);
+      container.appendChild(ghost);
+      document.body.appendChild(container);
+
+      // Remove after animation completes (6s)
+      setTimeout(() => {
+        if (container.parentNode) {
+          container.parentNode.removeChild(container);
+        }
+      }, 6000);
+    });
+  }
