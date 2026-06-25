@@ -453,3 +453,99 @@ textarea { resize: vertical; min-height: 120px; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
 }
+
+/* === I18N LANG SWITCHER & ANIMATION === */
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-left: 12px;
+  background: var(--light);
+  padding: 4px;
+  border-radius: 20px;
+}
+.lang-switcher.mobile {
+  margin: 12px 0 0 0;
+  justify-content: center;
+}
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 16px;
+  transition: all var(--transition);
+}
+.lang-btn:hover {
+  color: var(--primary);
+}
+.lang-btn.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Video Game Style Glitch Animation */
+.glitch-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.glitch-overlay.active {
+  opacity: 1;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 4px, 3px 100%;
+  animation: crtFlicker 0.15s infinite, vhsGlitch 0.4s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+body.translating {
+  animation: rgbShift 0.4s ease-in-out;
+}
+
+@keyframes crtFlicker {
+  0% { opacity: 0.95; }
+  50% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+@keyframes vhsGlitch {
+  0% { transform: translateY(0); filter: hue-rotate(0deg); }
+  20% { transform: translateY(-2px); filter: hue-rotate(90deg) contrast(150%); }
+  40% { transform: translateY(2px); filter: hue-rotate(-90deg) contrast(150%); }
+  60% { transform: translateY(0); filter: hue-rotate(45deg); }
+  80% { transform: translateY(1px); filter: hue-rotate(-45deg); }
+  100% { transform: translateY(0); filter: hue-rotate(0deg); }
+}
+
+@keyframes rgbShift {
+  0% { text-shadow: none; filter: blur(0); }
+  25% { text-shadow: 2px 0 0 red, -2px 0 0 blue; filter: blur(1px); }
+  50% { text-shadow: -3px 0 0 red, 3px 0 0 blue; filter: blur(2px) sepia(0.5); }
+  75% { text-shadow: 2px 0 0 red, -2px 0 0 blue; filter: blur(1px); }
+  100% { text-shadow: none; filter: blur(0); }
+}
+
+body.translating img, body.translating .card {
+  animation: glitchImage 0.4s steps(4) both;
+}
+
+@keyframes glitchImage {
+  0% { clip-path: inset(0 0 0 0); transform: translate(0); }
+  20% { clip-path: inset(20% 0 80% 0); transform: translate(-5px, 5px); }
+  40% { clip-path: inset(60% 0 10% 0); transform: translate(5px, -5px); }
+  60% { clip-path: inset(40% 0 40% 0); transform: translate(5px, 5px); }
+  80% { clip-path: inset(80% 0 5% 0); transform: translate(-5px, -5px); }
+  100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+}
