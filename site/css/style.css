@@ -453,3 +453,50 @@ textarea { resize: vertical; min-height: 120px; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
 }
+
+/* === VIDEO GAME ANIMATION === */
+.pixel-invader {
+  position: fixed;
+  bottom: 20px;
+  right: -100px; /* Start off-screen */
+  width: 10px;
+  height: 10px;
+  z-index: 1000;
+  pointer-events: none;
+  animation: moveInvader 15s linear infinite;
+
+  /* Drawing a Space Invader using box-shadow (each pixel is 10x10) */
+  box-shadow:
+    30px 0px 0 var(--secondary), 80px 0px 0 var(--secondary),
+    40px 10px 0 var(--secondary), 70px 10px 0 var(--secondary),
+    30px 20px 0 var(--secondary), 40px 20px 0 var(--secondary), 50px 20px 0 var(--secondary), 60px 20px 0 var(--secondary), 70px 20px 0 var(--secondary), 80px 20px 0 var(--secondary),
+    20px 30px 0 var(--secondary), 30px 30px 0 var(--secondary), 50px 30px 0 var(--secondary), 60px 30px 0 var(--secondary), 80px 30px 0 var(--secondary), 90px 30px 0 var(--secondary),
+    10px 40px 0 var(--secondary), 20px 40px 0 var(--secondary), 30px 40px 0 var(--secondary), 40px 40px 0 var(--secondary), 50px 40px 0 var(--secondary), 60px 40px 0 var(--secondary), 70px 40px 0 var(--secondary), 80px 40px 0 var(--secondary), 90px 40px 0 var(--secondary), 100px 40px 0 var(--secondary),
+    10px 50px 0 var(--secondary), 30px 50px 0 var(--secondary), 80px 50px 0 var(--secondary), 100px 50px 0 var(--secondary),
+    10px 60px 0 var(--secondary), 40px 60px 0 var(--secondary), 70px 60px 0 var(--secondary), 100px 60px 0 var(--secondary),
+    40px 70px 0 var(--secondary), 70px 70px 0 var(--secondary);
+}
+
+@keyframes moveInvader {
+  0%   { transform: translateX(100px) translateY(0px); }
+  5%   { transform: translateX(calc(-5vw)) translateY(-10px); }
+  10%  { transform: translateX(calc(-10vw)) translateY(0px); }
+  15%  { transform: translateX(calc(-15vw)) translateY(-10px); }
+  20%  { transform: translateX(calc(-20vw)) translateY(0px); }
+  25%  { transform: translateX(calc(-25vw)) translateY(-10px); }
+  30%  { transform: translateX(calc(-30vw)) translateY(0px); }
+  35%  { transform: translateX(calc(-35vw)) translateY(-10px); }
+  40%  { transform: translateX(calc(-40vw)) translateY(0px); }
+  45%  { transform: translateX(calc(-45vw)) translateY(-10px); }
+  50%  { transform: translateX(calc(-50vw)) translateY(0px); }
+  55%  { transform: translateX(calc(-55vw)) translateY(-10px); }
+  60%  { transform: translateX(calc(-60vw)) translateY(0px); }
+  65%  { transform: translateX(calc(-65vw)) translateY(-10px); }
+  70%  { transform: translateX(calc(-70vw)) translateY(0px); }
+  75%  { transform: translateX(calc(-75vw)) translateY(-10px); }
+  80%  { transform: translateX(calc(-80vw)) translateY(0px); }
+  85%  { transform: translateX(calc(-85vw)) translateY(-10px); }
+  90%  { transform: translateX(calc(-90vw)) translateY(0px); }
+  95%  { transform: translateX(calc(-95vw)) translateY(-10px); }
+  100% { transform: translateX(calc(-100vw - 200px)) translateY(0px); }
+}
