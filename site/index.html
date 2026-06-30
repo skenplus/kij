@@ -18,52 +18,63 @@
         KIJ<span>.</span>
       </a>
       <div class="nav-links">
-        <a href="index.html" class="active">Accueil</a>
-        <a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav_home">Accueil</a>
+        <a href="plateforme.html" data-i18n="nav_platform">Plateforme IA</a>
+        <a href="humanitaire.html" data-i18n="nav_humanitarian">Aide humanitaire</a>
+        <a href="apropos.html" data-i18n="nav_about">À propos</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact</a>
+        <div class="lang-switcher">
+          <button data-lang="fr" class="active">FR</button>
+          <span>|</span>
+          <button data-lang="en">EN</button>
+        </div>
       </div>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
     <nav class="mobile-menu">
-      <a href="index.html">Accueil</a>
-      <a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a>
-      <a href="apropos.html">À propos</a>
-      <a href="contact.html">Contact</a>
+      <div class="lang-switcher" style="padding: 10px 12px; margin-bottom: 8px;">
+        <button data-lang="fr" class="active">FR</button>
+        <span style="margin: 0 8px;">|</span>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="index.html" data-i18n="nav_home">Accueil</a>
+      <a href="plateforme.html" data-i18n="nav_platform">Plateforme IA</a>
+      <a href="humanitaire.html" data-i18n="nav_humanitarian">Aide humanitaire</a>
+      <a href="apropos.html" data-i18n="nav_about">À propos</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="space-invader">👾</div>
   <div class="container">
-    <div class="hero-badge">✦ Intelligence artificielle &amp; impact social</div>
-    <h1>L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
-    <p>KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
+    <div class="hero-badge" data-i18n="hero_badge">✦ Intelligence artificielle &amp; impact social</div>
+    <h1 data-i18n="hero_title">L'IA au service de<br /><em>l'humain</em> et de la<br />performance</h1>
+    <p data-i18n="hero_subtitle">KIJ est une plateforme IA multi-agents qui analyse, oriente et accompagne — que vous soyez une organisation, un professionnel ou une personne en difficulté.</p>
     <div class="hero-actions">
-      <a href="plateforme.html" class="btn btn-primary">Découvrir la plateforme →</a>
-      <a href="humanitaire.html" class="btn btn-outline">Module humanitaire</a>
+      <a href="plateforme.html" class="btn btn-primary retro-blink" data-i18n="hero_btn_platform">Découvrir la plateforme →</a>
+      <a href="humanitaire.html" class="btn btn-outline" data-i18n="hero_btn_humanitarian">Module humanitaire</a>
     </div>
     <div class="hero-sub">
       <div class="hero-stat">
         <strong>20</strong>
-        <span>Agents principaux</span>
+        <span data-i18n="stat_agents">Agents principaux</span>
       </div>
       <div class="hero-stat">
         <strong>36</strong>
-        <span>Sous-agents spécialisés</span>
+        <span data-i18n="stat_subagents">Sous-agents spécialisés</span>
       </div>
       <div class="hero-stat">
         <strong>8</strong>
-        <span>Outils connectés</span>
+        <span data-i18n="stat_tools">Outils connectés</span>
       </div>
       <div class="hero-stat">
         <strong>8</strong>
-        <span>Formats d'export</span>
+        <span data-i18n="stat_export">Formats d'export</span>
       </div>
     </div>
   </div>
@@ -242,5 +253,6 @@
 
 <script src="js/main.js"></script>
 <script src="js/chat-widget.js"></script>
+<script src="js/i18n.js"></script>
 </body>
 </html>
