@@ -1,0 +1,12 @@
+127.0.0.1 - - [04/Jul/2026 13:48:22] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:22] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:22] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:22] "GET /js/chat-widget.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:22] "GET /js/fr.json HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:24] "GET /js/en.json HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:54] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:54] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:54] "GET /js/chat-widget.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:54] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:54] "GET /js/fr.json HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jul/2026 13:48:55] "GET /js/en.json HTTP/1.1" 200 -
