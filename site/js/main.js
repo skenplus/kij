@@ -113,4 +113,50 @@
   }, { passive: true });
   topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+  // === i18n LOGIC ===
+  async function loadTranslations(lang) {
+    try {
+      const response = await fetch(`js/${lang}.json`);
+      if (!response.ok) throw new Error(`Could not load ${lang}.json`);
+      return await response.json();
+    } catch (error) {
+      console.error('Error loading translations:', error);
+      return null;
+    }
+  }
+
+  async function setLanguage(lang) {
+    const translations = await loadTranslations(lang);
+    if (!translations) return;
+
+    localStorage.setItem('kij_language', lang);
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[key]) {
+        el.innerHTML = translations[key];
+        // Ensure data-text is updated for glitch effects
+        if (el.hasAttribute('data-text')) {
+          el.setAttribute('data-text', el.textContent.replace(/\s+/g, ' ').trim());
+        }
+      }
+    });
+
+    // Update active state of language toggle buttons if they exist
+    document.querySelectorAll('.lang-toggle button').forEach(btn => {
+      if (btn.getAttribute('data-lang') === lang) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  }
+
+  // Expose setLanguage to global scope
+  window.setLanguage = setLanguage;
+
+  // Initialize language on load
+  const savedLang = localStorage.getItem('kij_language') || 'fr';
+  setLanguage(savedLang);
+
 })();
