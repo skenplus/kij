@@ -114,3 +114,58 @@
   topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 })();
+
+  // === i18n & GLITCH ANIMATION ===
+  let currentLang = localStorage.getItem('kij_lang') || 'fr';
+  let translations = {};
+
+  const loadTranslations = async (lang) => {
+    try {
+      const response = await fetch(`js/${lang}.json`);
+      if (!response.ok) throw new Error('Translation file not found');
+      translations = await response.json();
+      applyTranslations();
+    } catch (e) {
+      console.error('Error loading translations:', e);
+    }
+  };
+
+  const applyTranslations = () => {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[key]) {
+        el.innerHTML = translations[key];
+      }
+    });
+    document.documentElement.lang = currentLang;
+  };
+
+  const triggerGlitchAnimation = () => {
+    document.body.classList.add('glitch-anim');
+    setTimeout(() => {
+      document.body.classList.remove('glitch-anim');
+    }, 800); // 800ms animation duration
+  };
+
+  window.toggleLanguage = () => {
+    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('kij_lang', currentLang);
+    triggerGlitchAnimation();
+
+    // Slight delay before text switches to sync with glitch
+    setTimeout(() => {
+      loadTranslations(currentLang);
+      updateLangButtonText();
+    }, 200);
+  };
+
+  const updateLangButtonText = () => {
+    document.querySelectorAll('.lang-selector').forEach(btn => {
+      btn.textContent = currentLang === 'fr' ? 'FR' : 'EN';
+    });
+  };
+
+  // Initial load
+  loadTranslations(currentLang);
+  // Allow DOM to be updated before querying buttons
+  setTimeout(updateLangButtonText, 100);
