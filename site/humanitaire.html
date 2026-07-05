@@ -1,376 +1,366 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Module d'aide humanitaire et professionnelle — emploi, logement, droits, santé, formation, soutien sans jugement." />
-  <title>Aide humanitaire &amp; professionnelle — KIJ</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Module d'aide humanitaire et professionnelle — emploi, logement, droits, santé, formation, soutien sans jugement." name="description"/>
+<title>Aide humanitaire &amp; professionnelle — KIJ</title>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo"><div class="logo-icon">K</div>KIJ<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html" class="active">Aide humanitaire</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-      </div>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </nav>
-    <nav class="mobile-menu">
-      <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
-    </nav>
-  </div>
+<div class="container">
+<nav class="nav">
+<a class="nav-logo" href="index.html"><div class="logo-icon">K</div>KIJ<span data-i18n="text_5058f1">.</span></a>
+<div class="nav-links">
+<a data-i18n="accueil_74fe" href="index.html">Accueil</a>
+<a data-i18n="plateforme_ia_3bdd" href="plateforme.html">Plateforme IA</a>
+<a class="active" data-i18n="aide_humanitaire_2e65" href="humanitaire.html">Aide humanitaire</a>
+<a data-i18n="_propos_36df" href="apropos.html">À propos</a>
+<a class="nav-cta" data-i18n="contact_bbaf" href="contact.html">Contact</a>
+</div>
+<button class="lang-selector" onclick="toggleLanguage()">FR</button>
+<button aria-expanded="false" aria-label="Menu" class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-menu">
+<a data-i18n="accueil_74fe" href="index.html">Accueil</a><a data-i18n="plateforme_ia_3bdd" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="aide_humanitaire_2e65" href="humanitaire.html">Aide humanitaire</a><a data-i18n="_propos_36df" href="apropos.html">À propos</a><a data-i18n="contact_bbaf" href="contact.html">Contact</a>
+</nav>
+</div>
 </header>
-
 <!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="container">
-    <nav class="breadcrumb">
-      <a href="index.html">Accueil</a><span>/</span><span>Aide humanitaire &amp; professionnelle</span>
-    </nav>
-    <h1>Une aide concrète,<br />sans jugement</h1>
-    <p>Un accompagnement IA bienveillant pour les personnes en situation de vulnérabilité — emploi, logement, droits, santé, formation et orientation sociale.</p>
-  </div>
+<div class="container">
+<nav class="breadcrumb">
+<a data-i18n="accueil_74fe" href="index.html">Accueil</a><span data-i18n="text_6666cd">/</span><span data-i18n="aide_humanitaire__professionne_e600">Aide humanitaire &amp; professionnelle</span>
+</nav>
+<h1 data-i18n="une_aide_concrtesans_jugement_d103">Une aide concrète,<br/>sans jugement</h1>
+<p data-i18n="un_accompagnement_ia_bienveill_aa58">Un accompagnement IA bienveillant pour les personnes en situation de vulnérabilité — emploi, logement, droits, santé, formation et orientation sociale.</p>
+</div>
 </section>
-
 <!-- URGENCE ENCART -->
 <div style="background:#b91c1c; padding:14px 0;">
-  <div class="container" style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
-    <span style="color:#fff; font-weight:700; font-size:.95rem;">🚨 Urgence vitale ?</span>
-    <span style="color:rgba(255,255,255,.85); font-size:.9rem;">Suicide → <strong style="color:#fff;">3114</strong> · Violences → <strong style="color:#fff;">3919</strong> · Hébergement → <strong style="color:#fff;">115</strong> · Enfant → <strong style="color:#fff;">119</strong> · SAMU → <strong style="color:#fff;">15</strong></span>
-  </div>
+<div class="container" style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+<span data-i18n="_urgence_vitale__f5cb" style="color:#fff; font-weight:700; font-size:.95rem;">🚨 Urgence vitale ?</span>
+<span data-i18n="suicide__3114__violences__3919_d886" style="color:rgba(255,255,255,.85); font-size:.9rem;">Suicide → <strong style="color:#fff;">3114</strong> · Violences → <strong style="color:#fff;">3919</strong> · Hébergement → <strong style="color:#fff;">115</strong> · Enfant → <strong style="color:#fff;">119</strong> · SAMU → <strong style="color:#fff;">15</strong></span>
 </div>
-
+</div>
 <!-- QUI EST CONCERNÉ -->
 <section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Qui peut être accompagné ?</h2>
-      <p>Cette plateforme accueille toutes les situations de vulnérabilité ou de transition, sans condition ni jugement.</p>
-    </div>
-    <div class="grid-3">
-      <div class="card">
-        <div class="card-icon icon-orange">👤</div>
-        <h3>Demandeurs d'emploi</h3>
-        <p>Personnes en recherche longue, sans réseau, avec CV obsolète ou trou dans le parcours.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon icon-blue">🌍</div>
-        <h3>Réfugiés &amp; migrants</h3>
-        <p>Personnes arrivées récemment, en démarche de régularisation, sans couverture santé ni logement stable.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon icon-red">🏠</div>
-        <h3>Personnes sans logement</h3>
-        <p>Sans domicile fixe, en hébergement précaire ou face à une procédure d'expulsion.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon icon-purple">💪</div>
-        <h3>Personnes en reconversion</h3>
-        <p>Après licenciement, burn-out ou réorientation volontaire, sans ressources pour se former.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon icon-teal">🎓</div>
-        <h3>Jeunes en rupture</h3>
-        <p>Étudiants ou jeunes adultes sans logement stable, sans revenus ou sans soutien familial.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon icon-green">🤲</div>
-        <h3>Victimes de violence</h3>
-        <p>Personnes sortant d'une situation de violence, cherchant sécurité, emploi et reconstruction.</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="qui_peut_tre_accompagn__40ef">Qui peut être accompagné ?</h2>
+<p data-i18n="cette_plateforme_accueille_tou_7e02">Cette plateforme accueille toutes les situations de vulnérabilité ou de transition, sans condition ni jugement.</p>
+</div>
+<div class="grid-3">
+<div class="card">
+<div class="card-icon icon-orange" data-i18n="text_628379">👤</div>
+<h3 data-i18n="demandeurs_demploi_6363">Demandeurs d'emploi</h3>
+<p data-i18n="personnes_en_recherche_longue__2523">Personnes en recherche longue, sans réseau, avec CV obsolète ou trou dans le parcours.</p>
+</div>
+<div class="card">
+<div class="card-icon icon-blue" data-i18n="text_b60e81">🌍</div>
+<h3 data-i18n="rfugis__migrants_3a5d">Réfugiés &amp; migrants</h3>
+<p data-i18n="personnes_arrives_rcemment_en__3174">Personnes arrivées récemment, en démarche de régularisation, sans couverture santé ni logement stable.</p>
+</div>
+<div class="card">
+<div class="card-icon icon-red" data-i18n="text_e46d49">🏠</div>
+<h3 data-i18n="personnes_sans_logement_6200">Personnes sans logement</h3>
+<p data-i18n="sans_domicile_fixe_en_hbergeme_b568">Sans domicile fixe, en hébergement précaire ou face à une procédure d'expulsion.</p>
+</div>
+<div class="card">
+<div class="card-icon icon-purple" data-i18n="text_80689d">💪</div>
+<h3 data-i18n="personnes_en_reconversion_bc07">Personnes en reconversion</h3>
+<p data-i18n="aprs_licenciement_burnout_ou_r_1e6a">Après licenciement, burn-out ou réorientation volontaire, sans ressources pour se former.</p>
+</div>
+<div class="card">
+<div class="card-icon icon-teal" data-i18n="text_f83789">🎓</div>
+<h3 data-i18n="jeunes_en_rupture_0852">Jeunes en rupture</h3>
+<p data-i18n="tudiants_ou_jeunes_adultes_san_065a">Étudiants ou jeunes adultes sans logement stable, sans revenus ou sans soutien familial.</p>
+</div>
+<div class="card">
+<div class="card-icon icon-green" data-i18n="text_7c2424">🤲</div>
+<h3 data-i18n="victimes_de_violence_69c3">Victimes de violence</h3>
+<p data-i18n="personnes_sortant_dune_situati_df6d">Personnes sortant d'une situation de violence, cherchant sécurité, emploi et reconstruction.</p>
+</div>
+</div>
+</div>
 </section>
-
 <!-- AGENTS / SERVICES -->
 <section class="section section--light" id="services">
-  <div class="container">
-    <div class="section-header">
-      <h2>Les 12 agents d'accompagnement</h2>
-      <p>Chaque situation active automatiquement les agents nécessaires. Tous travaillent ensemble.</p>
-    </div>
-    <div class="grid-3">
-      <div class="agent-card">
-        <div class="agent-num">1</div>
-        <h4>Orchestrateur humanitaire</h4>
-        <p>Coordonne l'ensemble, priorise les besoins urgents, active les bons agents et produit le plan d'action global.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">2</div>
-        <h4>Écoute &amp; détection de situation</h4>
-        <p>Comprend la situation réelle, détecte les besoins implicites et les signaux de détresse.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">3</div>
-        <h4>Orientation juridique &amp; administrative</h4>
-        <p>Explique les droits, les démarches et rédige lettres et courriers — sans remplacer un juriste.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">4</div>
-        <h4>Emploi, CV &amp; entretien</h4>
-        <p>Rédige le CV, personnalise la lettre de motivation, prépare aux entretiens selon le secteur visé.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">5</div>
-        <h4>Formation &amp; reconversion</h4>
-        <p>Identifie les formations, explique CPF, OPCO, Pro-A et construit un plan de reconversion réaliste.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">6</div>
-        <h4>Ressources locales</h4>
-        <p>Oriente vers associations, services sociaux, aide alimentaire et structures selon la situation géographique.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">7</div>
-        <h4>Logement &amp; urgence sociale</h4>
-        <p>DALO, FSL, 115, CHRS — accompagne les démarches de logement d'urgence ou de maintien.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">8</div>
-        <h4>Santé &amp; orientation médicale</h4>
-        <p>AME, CSS, PASS — explique les droits à la santé et oriente sans poser de diagnostic.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">9</div>
-        <h4>Soutien psychosocial non clinique</h4>
-        <p>Écoute bienveillante, reformulation, identification des ressources internes et orientations vers des lignes d'aide.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">10</div>
-        <h4>Linguistique &amp; traduction</h4>
-        <p>Adapte la communication en 10 langues et simplifie si nécessaire (FALC, langue claire).</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">11</div>
-        <h4>Rapport &amp; plan d'action</h4>
-        <p>Crée un plan en 3 horizons : aujourd'hui / 30 jours / moyen terme, avec étapes concrètes.</p>
-      </div>
-      <div class="agent-card">
-        <div class="agent-num">12</div>
-        <h4>Qualité &amp; limites</h4>
-        <p>Vérifie la cohérence, indique le niveau de confiance et signale ce qui nécessite un professionnel humain.</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="les_12_agents_daccompagnement_cac4">Les 12 agents d'accompagnement</h2>
+<p data-i18n="chaque_situation_active_automa_63e3">Chaque situation active automatiquement les agents nécessaires. Tous travaillent ensemble.</p>
+</div>
+<div class="grid-3">
+<div class="agent-card">
+<div class="agent-num" data-i18n="1_c4ca">1</div>
+<h4 data-i18n="orchestrateur_humanitaire_1913">Orchestrateur humanitaire</h4>
+<p data-i18n="coordonne_lensemble_priorise_l_db42">Coordonne l'ensemble, priorise les besoins urgents, active les bons agents et produit le plan d'action global.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="2_c81e">2</div>
+<h4 data-i18n="coute__dtection_de_situation_3529">Écoute &amp; détection de situation</h4>
+<p data-i18n="comprend_la_situation_relle_dt_fd8a">Comprend la situation réelle, détecte les besoins implicites et les signaux de détresse.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="3_eccb">3</div>
+<h4 data-i18n="orientation_juridique__adminis_b232">Orientation juridique &amp; administrative</h4>
+<p data-i18n="explique_les_droits_les_dmarch_6076">Explique les droits, les démarches et rédige lettres et courriers — sans remplacer un juriste.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="4_a87f">4</div>
+<h4 data-i18n="emploi_cv__entretien_afdb">Emploi, CV &amp; entretien</h4>
+<p data-i18n="rdige_le_cv_personnalise_la_le_0074">Rédige le CV, personnalise la lettre de motivation, prépare aux entretiens selon le secteur visé.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="5_e4da">5</div>
+<h4 data-i18n="formation__reconversion_f82d">Formation &amp; reconversion</h4>
+<p data-i18n="identifie_les_formations_expli_5e7f">Identifie les formations, explique CPF, OPCO, Pro-A et construit un plan de reconversion réaliste.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="6_1679">6</div>
+<h4 data-i18n="ressources_locales_623a">Ressources locales</h4>
+<p data-i18n="oriente_vers_associations_serv_c3aa">Oriente vers associations, services sociaux, aide alimentaire et structures selon la situation géographique.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="7_8f14">7</div>
+<h4 data-i18n="logement__urgence_sociale_361d">Logement &amp; urgence sociale</h4>
+<p data-i18n="dalo_fsl_115_chrs__accompagne__03dd">DALO, FSL, 115, CHRS — accompagne les démarches de logement d'urgence ou de maintien.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="8_c9f0">8</div>
+<h4 data-i18n="sant__orientation_mdicale_aee9">Santé &amp; orientation médicale</h4>
+<p data-i18n="ame_css_pass__explique_les_dro_160b">AME, CSS, PASS — explique les droits à la santé et oriente sans poser de diagnostic.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="9_45c4">9</div>
+<h4 data-i18n="soutien_psychosocial_non_clini_5ba0">Soutien psychosocial non clinique</h4>
+<p data-i18n="coute_bienveillante_reformulat_4275">Écoute bienveillante, reformulation, identification des ressources internes et orientations vers des lignes d'aide.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="10_d3d9">10</div>
+<h4 data-i18n="linguistique__traduction_b196">Linguistique &amp; traduction</h4>
+<p data-i18n="adapte_la_communication_en_10__a385">Adapte la communication en 10 langues et simplifie si nécessaire (FALC, langue claire).</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="11_6512">11</div>
+<h4 data-i18n="rapport__plan_daction_458a">Rapport &amp; plan d'action</h4>
+<p data-i18n="cre_un_plan_en_3_horizons__auj_de78">Crée un plan en 3 horizons : aujourd'hui / 30 jours / moyen terme, avec étapes concrètes.</p>
+</div>
+<div class="agent-card">
+<div class="agent-num" data-i18n="12_c20a">12</div>
+<h4 data-i18n="qualit__limites_2242">Qualité &amp; limites</h4>
+<p data-i18n="vrifie_la_cohrence_indique_le__9e4c">Vérifie la cohérence, indique le niveau de confiance et signale ce qui nécessite un professionnel humain.</p>
+</div>
+</div>
+</div>
 </section>
-
 <!-- CE QUI EST PRODUIT -->
 <section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Ce que la plateforme produit</h2>
-      <p>Des documents concrets, directement utilisables, adaptés à chaque situation.</p>
-    </div>
-    <div class="grid-4">
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">📄</div>
-        <h4>CV</h4>
-        <p style="font-size:.87rem;">Adapté au secteur, valorisant les compétences réelles.</p>
-      </div>
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">✉️</div>
-        <h4>Lettre de motivation</h4>
-        <p style="font-size:.87rem;">Personnalisée, sincère, adaptée à la situation.</p>
-      </div>
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">📋</div>
-        <h4>Courrier administratif</h4>
-        <p style="font-size:.87rem;">CAF, préfecture, mairie, logement social, bailleur.</p>
-      </div>
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">🗺️</div>
-        <h4>Plan d'action</h4>
-        <p style="font-size:.87rem;">Priorisé sur 3 horizons avec contacts et délais.</p>
-      </div>
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">📚</div>
-        <h4>Guide de formation</h4>
-        <p style="font-size:.87rem;">Formations adaptées, financements disponibles.</p>
-      </div>
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">🏛️</div>
-        <h4>Liste de ressources</h4>
-        <p style="font-size:.87rem;">Associations, organismes, services par situation.</p>
-      </div>
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">💬</div>
-        <h4>Guide entretien</h4>
-        <p style="font-size:.87rem;">Questions/réponses, posture, présentation.</p>
-      </div>
-      <div class="card" style="text-align:center; padding:24px 16px;">
-        <div style="font-size:2rem; margin-bottom:12px;">⚕️</div>
-        <h4>Droits à la santé</h4>
-        <p style="font-size:.87rem;">AME, CSS, PASS — couverture et accès aux soins.</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="ce_que_la_plateforme_produit_0e13">Ce que la plateforme produit</h2>
+<p data-i18n="des_documents_concrets_directe_3913">Des documents concrets, directement utilisables, adaptés à chaque situation.</p>
+</div>
+<div class="grid-4">
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_a4ca12" style="font-size:2rem; margin-bottom:12px;">📄</div>
+<h4 data-i18n="cv_a5c8">CV</h4>
+<p data-i18n="adapt_au_secteur_valorisant_le_f3b3" style="font-size:.87rem;">Adapté au secteur, valorisant les compétences réelles.</p>
+</div>
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_43a32f" style="font-size:2rem; margin-bottom:12px;">✉️</div>
+<h4 data-i18n="lettre_de_motivation_1a55">Lettre de motivation</h4>
+<p data-i18n="personnalise_sincre_adapte__la_e756" style="font-size:.87rem;">Personnalisée, sincère, adaptée à la situation.</p>
+</div>
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_9fde5c" style="font-size:2rem; margin-bottom:12px;">📋</div>
+<h4 data-i18n="courrier_administratif_afce">Courrier administratif</h4>
+<p data-i18n="caf_prfecture_mairie_logement__dafc" style="font-size:.87rem;">CAF, préfecture, mairie, logement social, bailleur.</p>
+</div>
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_acf1af" style="font-size:2rem; margin-bottom:12px;">🗺️</div>
+<h4 data-i18n="plan_daction_bb5d">Plan d'action</h4>
+<p data-i18n="prioris_sur_3_horizons_avec_co_3600" style="font-size:.87rem;">Priorisé sur 3 horizons avec contacts et délais.</p>
+</div>
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_5e6ec5" style="font-size:2rem; margin-bottom:12px;">📚</div>
+<h4 data-i18n="guide_de_formation_20b0">Guide de formation</h4>
+<p data-i18n="formations_adaptes_financement_19e4" style="font-size:.87rem;">Formations adaptées, financements disponibles.</p>
+</div>
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_70ad5b" style="font-size:2rem; margin-bottom:12px;">🏛️</div>
+<h4 data-i18n="liste_de_ressources_d279">Liste de ressources</h4>
+<p data-i18n="associations_organismes_servic_2f6f" style="font-size:.87rem;">Associations, organismes, services par situation.</p>
+</div>
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_fdbe5f" style="font-size:2rem; margin-bottom:12px;">💬</div>
+<h4 data-i18n="guide_entretien_df40">Guide entretien</h4>
+<p data-i18n="questionsrponses_posture_prsen_04b0" style="font-size:.87rem;">Questions/réponses, posture, présentation.</p>
+</div>
+<div class="card" style="text-align:center; padding:24px 16px;">
+<div data-i18n="text_8ad535" style="font-size:2rem; margin-bottom:12px;">⚕️</div>
+<h4 data-i18n="droits__la_sant_1dcd">Droits à la santé</h4>
+<p data-i18n="ame_css_pass__couverture_et_ac_4a1d" style="font-size:.87rem;">AME, CSS, PASS — couverture et accès aux soins.</p>
+</div>
+</div>
+</div>
 </section>
-
 <!-- EXEMPLE DE FORMAT DE RÉPONSE -->
 <section class="section section--light">
-  <div class="container">
-    <div class="section-header">
-      <h2>Format de réponse standard</h2>
-      <p>Chaque accompagnement suit une structure bienveillante et complète.</p>
-    </div>
-    <div class="grid-2" style="gap:40px; align-items:start;">
-      <div>
-        <div class="card">
-          <div style="display:flex; flex-direction:column; gap:12px;">
-            <div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
-              <strong style="font-size:.85rem; color:var(--primary);">1. SITUATION COMPRISE</strong>
-              <p style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Reformulation bienveillante de la situation réelle</p>
-            </div>
-            <div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--secondary);">
-              <strong style="font-size:.85rem; color:var(--secondary);">2. BESOINS IDENTIFIÉS</strong>
-              <p style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Urgents · Importants · À anticiper</p>
-            </div>
-            <div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
-              <strong style="font-size:.85rem; color:var(--primary);">3. AGENTS ACTIVÉS</strong>
-              <p style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Liste des agents mobilisés pour la situation</p>
-            </div>
-            <div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--secondary);">
-              <strong style="font-size:.85rem; color:var(--secondary);">4. ACCOMPAGNEMENT</strong>
-              <p style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Analyse et réponse structurée par domaine</p>
-            </div>
-            <div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
-              <strong style="font-size:.85rem; color:var(--primary);">5. RESSOURCES &amp; CONTACTS</strong>
-              <p style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Organismes, numéros, associations adaptés</p>
-            </div>
-            <div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--green);">
-              <strong style="font-size:.85rem; color:var(--green);">6. PLAN D'ACTION</strong>
-              <p style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Aujourd'hui · 30 jours · Moyen terme</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3 style="margin-bottom:16px;">Ce que cette approche garantit</h3>
-        <div class="feature-list">
-          <div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong>Bienveillance absolue</strong><p>Aucun jugement. La situation est reformulée avec respect et sans interprétation négative.</p></div></div>
-          <div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong>Clarté et accessibilité</strong><p>Langage adapté au niveau de compréhension. FALC disponible. 10 langues gérées.</p></div></div>
-          <div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong>Limites clairement indiquées</strong><p>Ce que la plateforme peut faire et ce qui nécessite un professionnel humain sont toujours distingués.</p></div></div>
-          <div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong>Urgence détectée</strong><p>Si un signal de crise est détecté, les numéros d'urgence sont fournis immédiatement.</p></div></div>
-          <div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong>Autonomisation</strong><p>L'objectif est d'aider la personne à comprendre et à agir, pas de décider à sa place.</p></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="format_de_rponse_standard_db97">Format de réponse standard</h2>
+<p data-i18n="chaque_accompagnement_suit_une_abe5">Chaque accompagnement suit une structure bienveillante et complète.</p>
+</div>
+<div class="grid-2" style="gap:40px; align-items:start;">
+<div>
+<div class="card">
+<div style="display:flex; flex-direction:column; gap:12px;">
+<div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
+<strong data-i18n="1_situation_comprise_3f5a" style="font-size:.85rem; color:var(--primary);">1. SITUATION COMPRISE</strong>
+<p data-i18n="reformulation_bienveillante_de_3991" style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Reformulation bienveillante de la situation réelle</p>
+</div>
+<div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--secondary);">
+<strong data-i18n="2_besoins_identifis_d16c" style="font-size:.85rem; color:var(--secondary);">2. BESOINS IDENTIFIÉS</strong>
+<p data-i18n="urgents__importants___anticipe_e04b" style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Urgents · Importants · À anticiper</p>
+</div>
+<div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
+<strong data-i18n="3_agents_activs_7cd8" style="font-size:.85rem; color:var(--primary);">3. AGENTS ACTIVÉS</strong>
+<p data-i18n="liste_des_agents_mobiliss_pour_bae9" style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Liste des agents mobilisés pour la situation</p>
+</div>
+<div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--secondary);">
+<strong data-i18n="4_accompagnement_649f" style="font-size:.85rem; color:var(--secondary);">4. ACCOMPAGNEMENT</strong>
+<p data-i18n="analyse_et_rponse_structure_pa_3d3a" style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Analyse et réponse structurée par domaine</p>
+</div>
+<div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
+<strong data-i18n="5_ressources__contacts_a82f" style="font-size:.85rem; color:var(--primary);">5. RESSOURCES &amp; CONTACTS</strong>
+<p data-i18n="organismes_numros_associations_1d2d" style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Organismes, numéros, associations adaptés</p>
+</div>
+<div style="padding:10px 14px; background:var(--light); border-radius:var(--radius-sm); border-left:3px solid var(--green);">
+<strong data-i18n="6_plan_daction_21f3" style="font-size:.85rem; color:var(--green);">6. PLAN D'ACTION</strong>
+<p data-i18n="aujourdhui__30_jours__moyen_te_8dce" style="font-size:.87rem; margin-top:4px; color:var(--text-muted);">Aujourd'hui · 30 jours · Moyen terme</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 data-i18n="ce_que_cette_approche_garantit_988c" style="margin-bottom:16px;">Ce que cette approche garantit</h3>
+<div class="feature-list">
+<div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong data-i18n="bienveillance_absolue_9fce">Bienveillance absolue</strong><p data-i18n="aucun_jugement_la_situation_es_b9a3">Aucun jugement. La situation est reformulée avec respect et sans interprétation négative.</p></div></div>
+<div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong data-i18n="clart_et_accessibilit_ee82">Clarté et accessibilité</strong><p data-i18n="langage_adapt_au_niveau_de_com_7d06">Langage adapté au niveau de compréhension. FALC disponible. 10 langues gérées.</p></div></div>
+<div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong data-i18n="limites_clairement_indiques_ae55">Limites clairement indiquées</strong><p data-i18n="ce_que_la_plateforme_peut_fair_43b2">Ce que la plateforme peut faire et ce qui nécessite un professionnel humain sont toujours distingués.</p></div></div>
+<div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong data-i18n="urgence_dtecte_e627">Urgence détectée</strong><p data-i18n="si_un_signal_de_crise_est_dtec_88fa">Si un signal de crise est détecté, les numéros d'urgence sont fournis immédiatement.</p></div></div>
+<div class="feature-item"><div class="feature-dot" style="background:var(--green)"></div><div><strong data-i18n="autonomisation_7441">Autonomisation</strong><p data-i18n="lobjectif_est_daider_la_person_2fbb">L'objectif est d'aider la personne à comprendre et à agir, pas de décider à sa place.</p></div></div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- NUMÉROS D'URGENCE -->
 <section class="section" id="urgence">
-  <div class="container">
-    <div class="emergency-box">
-      <h3>📞 Numéros d'urgence (France)</h3>
-      <div class="emergency-grid">
-        <div class="emergency-item">
-          <div class="emergency-number">15</div>
-          <div class="emergency-label">SAMU — Urgence médicale</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">17</div>
-          <div class="emergency-label">Police secours</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">18</div>
-          <div class="emergency-label">Pompiers</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">112</div>
-          <div class="emergency-label">Urgences européennes</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">3114</div>
-          <div class="emergency-label">Prévention du suicide</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">3919</div>
-          <div class="emergency-label">Violences conjugales</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">119</div>
-          <div class="emergency-label">Enfant en danger</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">115</div>
-          <div class="emergency-label">SAMU social — hébergement</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">114</div>
-          <div class="emergency-label">Personnes sourdes (SMS)</div>
-        </div>
-        <div class="emergency-item">
-          <div class="emergency-number">116 000</div>
-          <div class="emergency-label">Personnes disparues</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="emergency-box">
+<h3 data-i18n="_numros_durgence_france_0174">📞 Numéros d'urgence (France)</h3>
+<div class="emergency-grid">
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="15_9bf3">15</div>
+<div class="emergency-label" data-i18n="samu__urgence_mdicale_f3f0">SAMU — Urgence médicale</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="17_70ef">17</div>
+<div class="emergency-label" data-i18n="police_secours_4239">Police secours</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="18_6f49">18</div>
+<div class="emergency-label" data-i18n="pompiers_f1ba">Pompiers</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="112_7f6f">112</div>
+<div class="emergency-label" data-i18n="urgences_europennes_9f17">Urgences européennes</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="3114_bbb0">3114</div>
+<div class="emergency-label" data-i18n="prvention_du_suicide_1a20">Prévention du suicide</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="3919_5fc7">3919</div>
+<div class="emergency-label" data-i18n="violences_conjugales_beb6">Violences conjugales</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="119_07e1">119</div>
+<div class="emergency-label" data-i18n="enfant_en_danger_ac6a">Enfant en danger</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="115_2b44">115</div>
+<div class="emergency-label" data-i18n="samu_social__hbergement_3096">SAMU social — hébergement</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="114_5fd0">114</div>
+<div class="emergency-label" data-i18n="personnes_sourdes_sms_a01b">Personnes sourdes (SMS)</div>
+</div>
+<div class="emergency-item">
+<div class="emergency-number" data-i18n="116_000_af31">116 000</div>
+<div class="emergency-label" data-i18n="personnes_disparues_de54">Personnes disparues</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- RESSOURCES -->
 <section class="section section--light" id="ressources">
-  <div class="container">
-    <div class="section-header">
-      <h2>Ressources clés</h2>
-      <p>Les structures nationales que la plateforme peut mobiliser pour vous orienter.</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Domaine</th><th>Structure / Dispositif</th><th>Pour qui</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><span class="tag tag-blue">Emploi</span></td><td>France Travail (ex Pôle Emploi), Missions Locales, Cap Emploi</td><td>Demandeurs d'emploi, jeunes, personnes handicapées</td></tr>
-          <tr><td><span class="tag tag-green">Formation</span></td><td>CPF (Mon Compte Formation), OPCO, Pôle Emploi, AFPA</td><td>Salariés, demandeurs d'emploi, reconversion</td></tr>
-          <tr><td><span class="tag tag-orange">Logement</span></td><td>115, CHRS, SIAO, Fonds FSL, DALO, Action Logement</td><td>Sans-abri, personnes en situation précaire</td></tr>
-          <tr><td><span class="tag tag-blue">Santé</span></td><td>PASS (Permanences Accès aux Soins), AME, CSS, CPAM</td><td>Personnes sans couverture santé ou en situation précaire</td></tr>
-          <tr><td><span class="tag tag-red">Juridique</span></td><td>Maisons de justice, aide juridictionnelle, ADIL, DAL</td><td>Personnes sans ressources, locataires, réfugiés</td></tr>
-          <tr><td><span class="tag tag-green">Social</span></td><td>France Services (MSAP), Centres sociaux, CCAS, CAF</td><td>Toutes situations, accès aux aides sociales</td></tr>
-          <tr><td><span class="tag tag-blue">Réfugiés</span></td><td>OFPRA, OFII, CADA, Croix-Rouge, France Terre d'Asile</td><td>Demandeurs d'asile, réfugiés, migrants</td></tr>
-          <tr><td><span class="tag tag-orange">Alimentation</span></td><td>Banques alimentaires, Restos du Cœur, Secours Catholique</td><td>Personnes en situation de précarité alimentaire</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="ressources_cls_7ebc">Ressources clés</h2>
+<p data-i18n="les_structures_nationales_que__4879">Les structures nationales que la plateforme peut mobiliser pour vous orienter.</p>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th data-i18n="domaine_32c4">Domaine</th><th data-i18n="structure__dispositif_6a1e">Structure / Dispositif</th><th data-i18n="pour_qui_4f3e">Pour qui</th></tr>
+</thead>
+<tbody>
+<tr><td><span class="tag tag-blue" data-i18n="emploi_a5ff">Emploi</span></td><td data-i18n="france_travail_ex_ple_emploi_m_341e">France Travail (ex Pôle Emploi), Missions Locales, Cap Emploi</td><td data-i18n="demandeurs_demploi_jeunes_pers_fba2">Demandeurs d'emploi, jeunes, personnes handicapées</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="formation_6ae0">Formation</span></td><td data-i18n="cpf_mon_compte_formation_opco__e87d">CPF (Mon Compte Formation), OPCO, Pôle Emploi, AFPA</td><td data-i18n="salaris_demandeurs_demploi_rec_8255">Salariés, demandeurs d'emploi, reconversion</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="logement_09b6">Logement</span></td><td data-i18n="115_chrs_siao_fonds_fsl_dalo_a_9200">115, CHRS, SIAO, Fonds FSL, DALO, Action Logement</td><td data-i18n="sansabri_personnes_en_situatio_2c53">Sans-abri, personnes en situation précaire</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="sant_1bdc">Santé</span></td><td data-i18n="pass_permanences_accs_aux_soin_91ba">PASS (Permanences Accès aux Soins), AME, CSS, CPAM</td><td data-i18n="personnes_sans_couverture_sant_4144">Personnes sans couverture santé ou en situation précaire</td></tr>
+<tr><td><span class="tag tag-red" data-i18n="juridique_75d5">Juridique</span></td><td data-i18n="maisons_de_justice_aide_juridi_7d82">Maisons de justice, aide juridictionnelle, ADIL, DAL</td><td data-i18n="personnes_sans_ressources_loca_59be">Personnes sans ressources, locataires, réfugiés</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="social_f431">Social</span></td><td data-i18n="france_services_msap_centres_s_df8d">France Services (MSAP), Centres sociaux, CCAS, CAF</td><td data-i18n="toutes_situations_accs_aux_aid_6f85">Toutes situations, accès aux aides sociales</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="rfugis_0603">Réfugiés</span></td><td data-i18n="ofpra_ofii_cada_croixrouge_fra_02e9">OFPRA, OFII, CADA, Croix-Rouge, France Terre d'Asile</td><td data-i18n="demandeurs_dasile_rfugis_migra_ffa3">Demandeurs d'asile, réfugiés, migrants</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="alimentation_ad5c">Alimentation</span></td><td data-i18n="banques_alimentaires_restos_du_ee2f">Banques alimentaires, Restos du Cœur, Secours Catholique</td><td data-i18n="personnes_en_situation_de_prca_83f3">Personnes en situation de précarité alimentaire</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-
 <!-- CTA -->
 <section class="cta-section" style="background: linear-gradient(135deg, #1a3a6c 0%, #2454a0 100%);">
-  <div class="container">
-    <h2>Besoin d'aide ?</h2>
-    <p>La plateforme est disponible pour toute situation, sans jugement et sans condition. Commencez par décrire votre situation.</p>
-    <a href="contact.html" class="btn btn-primary">Prendre contact →</a>
-  </div>
+<div class="container">
+<h2 data-i18n="besoin_daide__b28e">Besoin d'aide ?</h2>
+<p data-i18n="la_plateforme_est_disponible_p_7b23">La plateforme est disponible pour toute situation, sans jugement et sans condition. Commencez par décrire votre situation.</p>
+<a class="btn btn-primary" data-i18n="prendre_contact__e6f2" href="contact.html">Prendre contact →</a>
+</div>
 </section>
-
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span style="color:var(--secondary);">.</span></div>
-        <p>Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p>
-      </div>
-      <div><h4>Plateforme</h4><ul><li><a href="plateforme.html">Architecture IA</a></li><li><a href="plateforme.html#agents">Agents</a></li><li><a href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
-      <div><h4>Aide</h4><ul><li><a href="humanitaire.html">Module humanitaire</a></li><li><a href="humanitaire.html#urgence">Urgences</a></li><li><a href="humanitaire.html#ressources">Ressources</a></li></ul></div>
-      <div><h4>Projet</h4><ul><li><a href="apropos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 KIJ Platform</span>
-      <span>Assistant IA propulsé par Claude (Anthropic) · <a href="apropos.html#ethique">Éthique &amp; RGPD</a></span>
-    </div>
-  </div>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span data-i18n="text_5058f1" style="color:var(--secondary);">.</span></div>
+<p data-i18n="plateforme_ia_multiagents_pour_e731">Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p>
+</div>
+<div><h4 data-i18n="plateforme_cbc8">Plateforme</h4><ul><li><a data-i18n="architecture_ia_8696" href="plateforme.html">Architecture IA</a></li><li><a data-i18n="agents_3750" href="plateforme.html#agents">Agents</a></li><li><a data-i18n="roadmap_29af" href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
+<div><h4 data-i18n="aide_63f5">Aide</h4><ul><li><a data-i18n="module_humanitaire_02b1" href="humanitaire.html">Module humanitaire</a></li><li><a data-i18n="urgences_414b" href="humanitaire.html#urgence">Urgences</a></li><li><a data-i18n="ressources_6c13" href="humanitaire.html#ressources">Ressources</a></li></ul></div>
+<div><h4 data-i18n="projet_683a">Projet</h4><ul><li><a data-i18n="_propos_36df" href="apropos.html">À propos</a></li><li><a data-i18n="contact_bbaf" href="contact.html">Contact</a></li></ul></div>
+</div>
+<div class="footer-bottom">
+<span data-i18n="_2026_kij_platform_6ccd">© 2026 KIJ Platform</span>
+<span data-i18n="assistant_ia_propuls_par_claud_f468">Assistant IA propulsé par Claude (Anthropic) · <a href="apropos.html#ethique">Éthique &amp; RGPD</a></span>
+</div>
+</div>
 </footer>
-
 <script src="js/main.js"></script>
 <script src="js/chat-widget.js"></script>
 </body>

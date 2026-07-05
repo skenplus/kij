@@ -1,153 +1,145 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — KIJ</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact — KIJ</title>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo"><div class="logo-icon">K</div>KIJ<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta active">Contact</a>
-      </div>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </nav>
-    <nav class="mobile-menu">
-      <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
-    </nav>
-  </div>
+<div class="container">
+<nav class="nav">
+<a class="nav-logo" href="index.html"><div class="logo-icon">K</div>KIJ<span data-i18n="text_5058f1">.</span></a>
+<div class="nav-links">
+<a data-i18n="accueil_74fe" href="index.html">Accueil</a><a data-i18n="plateforme_ia_3bdd" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="aide_humanitaire_2e65" href="humanitaire.html">Aide humanitaire</a><a data-i18n="_propos_36df" href="apropos.html">À propos</a>
+<a class="nav-cta active" data-i18n="contact_bbaf" href="contact.html">Contact</a>
+</div>
+<button class="lang-selector" onclick="toggleLanguage()">FR</button>
+<button aria-expanded="false" aria-label="Menu" class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-menu">
+<a data-i18n="accueil_74fe" href="index.html">Accueil</a><a data-i18n="plateforme_ia_3bdd" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="aide_humanitaire_2e65" href="humanitaire.html">Aide humanitaire</a><a data-i18n="_propos_36df" href="apropos.html">À propos</a><a data-i18n="contact_bbaf" href="contact.html">Contact</a>
+</nav>
+</div>
 </header>
-
 <section class="page-hero">
-  <div class="container">
-    <nav class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Contact</span></nav>
-    <h1>Nous contacter</h1>
-    <p>Une question sur la plateforme, un besoin d'aide ou une collaboration ? Décrivez votre situation.</p>
-  </div>
+<div class="container">
+<nav class="breadcrumb"><a data-i18n="accueil_74fe" href="index.html">Accueil</a><span data-i18n="text_6666cd">/</span><span data-i18n="contact_bbaf">Contact</span></nav>
+<h1 data-i18n="nous_contacter_c552">Nous contacter</h1>
+<p data-i18n="une_question_sur_la_plateforme_a8d6">Une question sur la plateforme, un besoin d'aide ou une collaboration ? Décrivez votre situation.</p>
+</div>
 </section>
-
 <section class="section">
-  <div class="container">
-    <div class="grid-2" style="gap:56px; align-items:start;">
-
-      <!-- FORMULAIRE -->
-      <div>
-        <h2 style="margin-bottom:8px;">Envoyer un message</h2>
-        <p style="color:var(--text-muted); margin-bottom:28px; font-size:.93rem;">Ce formulaire est local — aucune donnée n'est transmise à un serveur externe.</p>
-
-        <div id="form-success" style="display:none;" class="info-box" style="margin-bottom:20px;">
+<div class="container">
+<div class="grid-2" style="gap:56px; align-items:start;">
+<!-- FORMULAIRE -->
+<div>
+<h2 data-i18n="envoyer_un_message_95a3" style="margin-bottom:8px;">Envoyer un message</h2>
+<p data-i18n="ce_formulaire_est_local__aucun_3d2c" style="color:var(--text-muted); margin-bottom:28px; font-size:.93rem;">Ce formulaire est local — aucune donnée n'est transmise à un serveur externe.</p>
+<div class="info-box" data-i18n="_votre_message_a_bien_t_enregi_47d5" id="form-success" style="margin-bottom:20px;">
           ✓ Votre message a bien été enregistré localement.
         </div>
-
-        <form id="contact-form" novalidate>
-          <div class="form-group">
-            <label for="prenom">Prénom *</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="votre@email.com" />
-            <p class="form-note">Optionnel — aucun email n'est envoyé depuis ce formulaire.</p>
-          </div>
-          <div class="form-group">
-            <label for="sujet">Type de demande *</label>
-            <select id="sujet" name="sujet" required>
-              <option value="">— Choisissez —</option>
-              <option value="aide">Besoin d'aide humanitaire / sociale</option>
-              <option value="emploi">Recherche d'emploi / reconversion</option>
-              <option value="plateforme">Question sur la plateforme IA</option>
-              <option value="collaboration">Partenariat ou collaboration</option>
-              <option value="technique">Question technique</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="situation">Décrivez votre situation *</label>
-            <textarea id="situation" name="situation" placeholder="Expliquez votre situation ou votre question en quelques lignes..." required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="langue">Langue préférée</label>
-            <select id="langue" name="langue">
-              <option value="fr">Français</option>
-              <option value="en">English</option>
-              <option value="ar">العربية</option>
-              <option value="es">Español</option>
-              <option value="pt">Português</option>
-              <option value="uk">Українська</option>
-              <option value="wo">Wolof</option>
-              <option value="so">Soomaali</option>
-            </select>
-          </div>
-          <div class="warn-box" style="margin-bottom:20px; font-size:.87rem;">
+<form id="contact-form" novalidate="">
+<div class="form-group">
+<label data-i18n="prnom__4f85" for="prenom">Prénom *</label>
+<input id="prenom" name="prenom" placeholder="Votre prénom" required="" type="text"/>
+</div>
+<div class="form-group">
+<label data-i18n="email_ce8a" for="email">Email</label>
+<input id="email" name="email" placeholder="votre@email.com" type="email"/>
+<p class="form-note" data-i18n="optionnel__aucun_email_nest_en_69da">Optionnel — aucun email n'est envoyé depuis ce formulaire.</p>
+</div>
+<div class="form-group">
+<label data-i18n="type_de_demande__7ae7" for="sujet">Type de demande *</label>
+<select id="sujet" name="sujet" required="">
+<option data-i18n="_choisissez__0425" value="">— Choisissez —</option>
+<option data-i18n="besoin_daide_humanitaire__soci_fec7" value="aide">Besoin d'aide humanitaire / sociale</option>
+<option data-i18n="recherche_demploi__reconversio_098e" value="emploi">Recherche d'emploi / reconversion</option>
+<option data-i18n="question_sur_la_plateforme_ia_c627" value="plateforme">Question sur la plateforme IA</option>
+<option data-i18n="partenariat_ou_collaboration_3479" value="collaboration">Partenariat ou collaboration</option>
+<option data-i18n="question_technique_c58f" value="technique">Question technique</option>
+<option data-i18n="autre_977a" value="autre">Autre</option>
+</select>
+</div>
+<div class="form-group">
+<label data-i18n="dcrivez_votre_situation__0593" for="situation">Décrivez votre situation *</label>
+<textarea id="situation" name="situation" placeholder="Expliquez votre situation ou votre question en quelques lignes..." required=""></textarea>
+</div>
+<div class="form-group">
+<label data-i18n="langue_prfre_4ba5" for="langue">Langue préférée</label>
+<select id="langue" name="langue">
+<option data-i18n="franais_e054" value="fr">Français</option>
+<option data-i18n="english_7846" value="en">English</option>
+<option data-i18n="text_26b1b2" value="ar">العربية</option>
+<option data-i18n="espaol_de92" value="es">Español</option>
+<option data-i18n="portugus_10fe" value="pt">Português</option>
+<option data-i18n="text_e1c319" value="uk">Українська</option>
+<option data-i18n="wolof_410d" value="wo">Wolof</option>
+<option data-i18n="soomaali_5d2c" value="so">Soomaali</option>
+</select>
+</div>
+<div class="warn-box" data-i18n="_si_vous_tes_en_situation_durg_9726" style="margin-bottom:20px; font-size:.87rem;">
             ⚠️ Si vous êtes en situation d'urgence vitale, n'attendez pas. Appelez le <strong>15</strong> (SAMU), <strong>3114</strong> (suicide), <strong>3919</strong> (violences) ou <strong>115</strong> (hébergement).
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+<button class="btn btn-primary" data-i18n="enregistrer_le_message__0f80" style="width:100%; justify-content:center;" type="submit">
             Enregistrer le message →
           </button>
-        </form>
-      </div>
-
-      <!-- INFOS LATÉRALES -->
-      <div>
-        <div class="card" style="margin-bottom:24px;">
-          <h3 style="margin-bottom:16px;">Urgences immédiates</h3>
-          <div style="display:flex; flex-direction:column; gap:10px;">
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🏥 SAMU — urgence médicale</span><strong>15</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>💙 Prévention suicide</span><strong>3114</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🟣 Violences conjugales</span><strong>3919</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🏠 Hébergement d'urgence</span><strong>115</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🧒 Enfant en danger</span><strong>119</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🚒 Pompiers</span><strong>18</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 style="margin-bottom:16px;">Ce que nous pouvons faire</h3>
-          <div class="feature-list">
-            <div class="feature-item"><div class="feature-dot"></div><div>Analyser votre situation et activer les agents adaptés</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Rédiger CV, lettre de motivation, courrier administratif</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Orienter vers les ressources locales et associations</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Construire un plan d'action concret et priorisé</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Répondre dans votre langue</div></div>
-            <div class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div style="color:var(--text-muted);">Remplacer un médecin, juriste ou psychologue — NON</div></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+</form>
+</div>
+<!-- INFOS LATÉRALES -->
+<div>
+<div class="card" style="margin-bottom:24px;">
+<h3 data-i18n="urgences_immdiates_389f" style="margin-bottom:16px;">Urgences immédiates</h3>
+<div style="display:flex; flex-direction:column; gap:10px;">
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="_samu__urgence_mdicale_a7b3">🏥 SAMU — urgence médicale</span><strong data-i18n="15_9bf3">15</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="_prvention_suicide_4e13">💙 Prévention suicide</span><strong data-i18n="3114_bbb0">3114</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="_violences_conjugales_a85e">🟣 Violences conjugales</span><strong data-i18n="3919_5fc7">3919</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="_hbergement_durgence_d555">🏠 Hébergement d'urgence</span><strong data-i18n="115_2b44">115</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="_enfant_en_danger_41b2">🧒 Enfant en danger</span><strong data-i18n="119_07e1">119</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="_pompiers_8804">🚒 Pompiers</span><strong data-i18n="18_6f49">18</strong>
+</div>
+</div>
+</div>
+<div class="card">
+<h3 data-i18n="ce_que_nous_pouvons_faire_8529" style="margin-bottom:16px;">Ce que nous pouvons faire</h3>
+<div class="feature-list">
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="analyser_votre_situation_et_ac_bd8a">Analyser votre situation et activer les agents adaptés</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="rdiger_cv_lettre_de_motivation_35c0">Rédiger CV, lettre de motivation, courrier administratif</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="orienter_vers_les_ressources_l_8a6d">Orienter vers les ressources locales et associations</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="construire_un_plan_daction_con_5db6">Construire un plan d'action concret et priorisé</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="rpondre_dans_votre_langue_733f">Répondre dans votre langue</div></div>
+<div class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div data-i18n="remplacer_un_mdecin_juriste_ou_d283" style="color:var(--text-muted);">Remplacer un médecin, juriste ou psychologue — NON</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span style="color:var(--secondary);">.</span></div><p>Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
-      <div><h4>Plateforme</h4><ul><li><a href="plateforme.html">Architecture IA</a></li><li><a href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
-      <div><h4>Aide</h4><ul><li><a href="humanitaire.html">Module humanitaire</a></li><li><a href="humanitaire.html#urgence">Urgences</a></li></ul></div>
-      <div><h4>Projet</h4><ul><li><a href="apropos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><span>© 2026 KIJ Platform</span><span>Formulaire local — aucune donnée transmise</span></div>
-  </div>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span data-i18n="text_5058f1" style="color:var(--secondary);">.</span></div><p data-i18n="plateforme_ia_multiagents_pour_e731">Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
+<div><h4 data-i18n="plateforme_cbc8">Plateforme</h4><ul><li><a data-i18n="architecture_ia_8696" href="plateforme.html">Architecture IA</a></li><li><a data-i18n="roadmap_29af" href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
+<div><h4 data-i18n="aide_63f5">Aide</h4><ul><li><a data-i18n="module_humanitaire_02b1" href="humanitaire.html">Module humanitaire</a></li><li><a data-i18n="urgences_414b" href="humanitaire.html#urgence">Urgences</a></li></ul></div>
+<div><h4 data-i18n="projet_683a">Projet</h4><ul><li><a data-i18n="_propos_36df" href="apropos.html">À propos</a></li><li><a data-i18n="contact_bbaf" href="contact.html">Contact</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span data-i18n="_2026_kij_platform_6ccd">© 2026 KIJ Platform</span><span data-i18n="formulaire_local__aucune_donne_dd41">Formulaire local — aucune donnée transmise</span></div>
+</div>
 </footer>
 <script src="js/main.js"></script>
 <script src="js/chat-widget.js"></script>
