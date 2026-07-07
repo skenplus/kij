@@ -453,3 +453,59 @@ textarea { resize: vertical; min-height: 120px; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.4rem; }
 }
+
+/* LANGUAGE SWITCHER */
+.lang-switch {
+  display: inline-flex;
+  gap: 4px;
+  background: rgba(26,58,108,.05);
+  padding: 4px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.lang-switch button {
+  background: transparent;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.lang-switch button.active {
+  background: #fff;
+  color: var(--primary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.mobile-menu .lang-switch {
+  margin: 20px 0 0 0;
+  justify-content: center;
+}
+
+/* SPACE INVADER ANIMATION */
+.space-invader {
+  position: fixed;
+  top: 50%;
+  left: -100px;
+  width: 48px;
+  height: 36px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8"><path fill="%231aaa6c" d="M3 0h1v1H3zm4 0h1v1H7zM2 1h1v1H2zm6 0h1v1H8zM1 2h1v1H1zm8 0h1v1H9zM0 3h3v1H0zm4 0h3v1H4zm4 0h3v1H8zM0 4h11v1H0zM0 5h1v1H0zm2 0h7v1H2zm8 0h1v1H10zM2 6h2v1H2zm5 0h2v1H7zM3 7h1v1H3zm4 0h1v1H7z"/></svg>');
+  background-size: cover;
+  image-rendering: pixelated;
+  z-index: 10000;
+  animation: moveInvader 4s linear forwards, wiggle 0.5s step-end infinite;
+  transform: translateY(-50%);
+}
+
+@keyframes moveInvader {
+  0% { left: -100px; }
+  100% { left: 110vw; }
+}
+
+@keyframes wiggle {
+  0% { transform: translateY(-50%); }
+  50% { transform: translateY(calc(-50% - 10px)); }
+  100% { transform: translateY(-50%); }
+}

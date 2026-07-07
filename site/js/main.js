@@ -114,3 +114,74 @@
   topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 })();
+
+  // === i18n TRANSLATION ===
+  let currentLang = localStorage.getItem('kij_lang') || 'fr';
+  let frTranslations = {};
+  let enTranslations = {};
+
+  async function loadTranslations() {
+    try {
+      const [frRes, enRes] = await Promise.all([
+        fetch('js/fr.json'),
+        fetch('js/en.json')
+      ]);
+      frTranslations = await frRes.json();
+      enTranslations = await enRes.json();
+      applyLanguage(currentLang);
+    } catch (e) {
+      console.error('Error loading translations', e);
+    }
+  }
+
+  function applyLanguage(lang) {
+    const dict = lang === 'en' ? enTranslations : frTranslations;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) {
+        el.innerHTML = dict[key];
+      }
+    });
+
+    document.querySelectorAll('.lang-switch button').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+  }
+
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      currentLang = lang;
+      localStorage.setItem('kij_lang', lang);
+      applyLanguage(lang);
+    });
+  });
+
+  loadTranslations();
+
+  // === VIDEO GAME ANIMATION (KONAMI CODE) ===
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+  let konamiIndex = 0;
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === konamiCode[konamiIndex]) {
+      konamiIndex++;
+      if (konamiIndex === konamiCode.length) {
+        konamiIndex = 0;
+        triggerVideoGameAnimation();
+      }
+    } else {
+      konamiIndex = 0;
+    }
+  });
+
+  function triggerVideoGameAnimation() {
+    const alien = document.createElement('div');
+    alien.classList.add('space-invader');
+    document.body.appendChild(alien);
+
+    setTimeout(() => {
+      alien.remove();
+    }, 4000);
+  }

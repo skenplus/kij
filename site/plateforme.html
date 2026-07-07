@@ -1,201 +1,203 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plateforme IA multi-agents — KIJ</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plateforme IA multi-agents &mdash; KIJ</title>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo"><div class="logo-icon">K</div>KIJ<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="plateforme.html" class="active">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-      </div>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </nav>
-    <nav class="mobile-menu">
-      <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
-    </nav>
-  </div>
+<div class="container">
+<nav class="nav">
+<a class="nav-logo" href="index.html"><div class="logo-icon">K</div>KIJ<span>.</span></a>
+<div class="nav-links">
+<a data-i18n="plateforme_accueil" href="index.html">Accueil</a>
+<a class="active" data-i18n="plateforme_plateforme_ia" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="plateforme_aide_humanitaire" href="humanitaire.html">Aide humanitaire</a>
+<a data-i18n="plateforme_propos" href="apropos.html">&Agrave; propos</a>
+<a class="nav-cta" data-i18n="plateforme_contact" href="contact.html">Contact</a>
+
+        <div class="lang-switch">
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+</div>
+<button aria-expanded="false" aria-label="Menu" class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-menu">
+<a data-i18n="plateforme_accueil" href="index.html">Accueil</a><a data-i18n="plateforme_plateforme_ia" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="plateforme_aide_humanitaire" href="humanitaire.html">Aide humanitaire</a><a data-i18n="plateforme_propos" href="apropos.html">&Agrave; propos</a><a data-i18n="plateforme_contact" href="contact.html">Contact</a>
+
+        <div class="lang-switch">
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+</nav>
+</div>
 </header>
-
 <section class="page-hero">
-  <div class="container">
-    <nav class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Plateforme IA</span></nav>
-    <h1>Architecture IA<br />multi-agents</h1>
-    <p>20 agents principaux, 36 sous-agents, 8 outils connectés — une plateforme modulaire pour analyser, corriger, structurer et livrer.</p>
-  </div>
+<div class="container">
+<nav class="breadcrumb"><a data-i18n="plateforme_accueil" href="index.html">Accueil</a><span>/</span><span data-i18n="plateforme_plateforme_ia">Plateforme IA</span></nav>
+<h1 data-i18n="plateforme_architecture_iamulti_agents">Architecture IA<br/>multi-agents</h1>
+<p data-i18n="plateforme_20_agents_principaux__36_sous">20 agents principaux, 36 sous-agents, 8 outils connect&eacute;s &mdash; une plateforme modulaire pour analyser, corriger, structurer et livrer.</p>
+</div>
 </section>
-
 <!-- PILE TECHNIQUE -->
 <section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>La pile technologique</h2>
-      <p>Chaque outil joue un rôle précis. La logique <strong>ET</strong> : utiliser les deux quand c'est complémentaire.</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Couche</th><th>Outil</th><th>Rôle principal</th></tr></thead>
-        <tbody>
-          <tr><td><span class="tag tag-blue">IA principale</span></td><td><strong>Claude API</strong></td><td>Raisonnement, agents, prompts, rapports, correction linguistique</td></tr>
-          <tr><td><span class="tag tag-green">Documents</span></td><td><strong>NotebookLM</strong></td><td>Organisation et synthèse de sources documentaires</td></tr>
-          <tr><td><span class="tag tag-blue">Multimodal</span></td><td><strong>Gemini API</strong></td><td>Images, audio, vidéo, documents longs</td></tr>
-          <tr><td><span class="tag tag-orange">Recherche</span></td><td><strong>Perplexity API</strong></td><td>Veille, tendances, sources vérifiées et actualités</td></tr>
-          <tr><td><span class="tag tag-green">Automatisation</span></td><td><strong>n8n</strong></td><td>Orchestration, webhooks, connexion entre outils</td></tr>
-          <tr><td><span class="tag tag-blue">Base de données</span></td><td><strong>Supabase</strong></td><td>PostgreSQL, auth, stockage fichiers, vecteurs (RAG)</td></tr>
-          <tr><td><span class="tag tag-orange">Agents</span></td><td><strong>CrewAI</strong></td><td>Équipes d'agents spécialisés avec rôles définis</td></tr>
-          <tr><td><span class="tag tag-green">Orchestration</span></td><td><strong>LangGraph</strong></td><td>Machines à états, routage conditionnel, boucles qualité</td></tr>
-          <tr><td><span class="tag tag-blue">Frontend</span></td><td><strong>React / Next.js</strong></td><td>Interface utilisateur, rendu statique ou serveur</td></tr>
-          <tr><td><span class="tag tag-orange">Backend</span></td><td><strong>Python / FastAPI</strong></td><td>Routes API, logique métier, intégrations</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="plateforme_la_pile_technologique">La pile technologique</h2>
+<p data-i18n="plateforme_chaque_outil_joue_un_r_le_pr_c">Chaque outil joue un r&ocirc;le pr&eacute;cis. La logique <strong data-i18n="plateforme_et">ET</strong> : utiliser les deux quand c'est compl&eacute;mentaire.</p>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th data-i18n="plateforme_couche">Couche</th><th data-i18n="plateforme_outil">Outil</th><th data-i18n="plateforme_r_le_principal">R&ocirc;le principal</th></tr></thead>
+<tbody>
+<tr><td><span class="tag tag-blue" data-i18n="plateforme_ia_principale">IA principale</span></td><td><strong data-i18n="plateforme_claude_api">Claude API</strong></td><td data-i18n="plateforme_raisonnement__agents__prompts">Raisonnement, agents, prompts, rapports, correction linguistique</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="plateforme_documents">Documents</span></td><td><strong data-i18n="plateforme_notebooklm">NotebookLM</strong></td><td data-i18n="plateforme_organisation_et_synth_se_de_so">Organisation et synth&egrave;se de sources documentaires</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="plateforme_multimodal">Multimodal</span></td><td><strong data-i18n="plateforme_gemini_api">Gemini API</strong></td><td data-i18n="plateforme_images__audio__vid_o__document">Images, audio, vid&eacute;o, documents longs</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="plateforme_recherche">Recherche</span></td><td><strong data-i18n="plateforme_perplexity_api">Perplexity API</strong></td><td data-i18n="plateforme_veille__tendances__sources_v_r">Veille, tendances, sources v&eacute;rifi&eacute;es et actualit&eacute;s</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="plateforme_automatisation">Automatisation</span></td><td><strong>n8n</strong></td><td data-i18n="plateforme_orchestration__webhooks__conne">Orchestration, webhooks, connexion entre outils</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="plateforme_base_de_donn_es">Base de donn&eacute;es</span></td><td><strong>Supabase</strong></td><td data-i18n="plateforme_postgresql__auth__stockage_fic">PostgreSQL, auth, stockage fichiers, vecteurs (RAG)</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="plateforme_agents">Agents</span></td><td><strong data-i18n="plateforme_crewai">CrewAI</strong></td><td data-i18n="plateforme_quipes_d_agents_sp_cialis_s_a">&Eacute;quipes d'agents sp&eacute;cialis&eacute;s avec r&ocirc;les d&eacute;finis</td></tr>
+<tr><td><span class="tag tag-green" data-i18n="plateforme_orchestration">Orchestration</span></td><td><strong data-i18n="plateforme_langgraph">LangGraph</strong></td><td data-i18n="plateforme_machines____tats__routage_cond">Machines &agrave; &eacute;tats, routage conditionnel, boucles qualit&eacute;</td></tr>
+<tr><td><span class="tag tag-blue" data-i18n="plateforme_frontend">Frontend</span></td><td><strong data-i18n="plateforme_react___next_js">React / Next.js</strong></td><td data-i18n="plateforme_interface_utilisateur__rendu_s">Interface utilisateur, rendu statique ou serveur</td></tr>
+<tr><td><span class="tag tag-orange" data-i18n="plateforme_backend">Backend</span></td><td><strong data-i18n="plateforme_python___fastapi">Python / FastAPI</strong></td><td data-i18n="plateforme_routes_api__logique_m_tier__in">Routes API, logique m&eacute;tier, int&eacute;grations</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-
 <!-- AGENTS -->
 <section class="section section--light" id="agents">
-  <div class="container">
-    <div class="section-header">
-      <h2>Les 20 agents principaux</h2>
-      <p>L'orchestrateur sélectionne et séquence les autres à chaque demande.</p>
-    </div>
-    <div class="grid-3">
-      <div class="agent-card"><div class="agent-num">1</div><h4>Orchestrateur</h4><p>Pilote l'ensemble, sélectionne les agents, fusionne les résultats et produit la réponse finale.</p></div>
-      <div class="agent-card"><div class="agent-num">2</div><h4>Détection de fichiers</h4><p>Classifie le contenu déposé : CV, contrat, rapport, facture, code, image, tableau.</p></div>
-      <div class="agent-card"><div class="agent-num">3</div><h4>Linguistique</h4><p>Orthographe, grammaire, conjugaison, ponctuation, style et clarté.</p></div>
-      <div class="agent-card"><div class="agent-num">4</div><h4>Rapport automatique</h4><p>Transforme l'analyse en résumé exécutif + recommandations + plan d'action.</p></div>
-      <div class="agent-card"><div class="agent-num">5</div><h4>Qualité</h4><p>Détecte les contradictions, vérifie la cohérence et attribue un niveau de confiance.</p></div>
-      <div class="agent-card"><div class="agent-num">6</div><h4>Prompt Engineer</h4><p>Transforme une demande floue en prompt opérationnel précis.</p></div>
-      <div class="agent-card"><div class="agent-num">7</div><h4>Compétences / Skills</h4><p>Détecte les compétences existantes, manquantes, génère celles nécessaires.</p></div>
-      <div class="agent-card"><div class="agent-num">8</div><h4>Chef de projet</h4><p>Transforme l'idée en roadmap avec MVP, étapes et critères de succès.</p></div>
-      <div class="agent-card"><div class="agent-num">9</div><h4>UX / UI</h4><p>Conçoit le parcours utilisateur et la structure d'interface.</p></div>
-      <div class="agent-card"><div class="agent-num">10</div><h4>Sécurité &amp; Confidentialité</h4><p>Détecte les données sensibles, sécurise les accès et les clés API.</p></div>
-      <div class="agent-card"><div class="agent-num">11</div><h4>RGPD</h4><p>Vérifie consentement, conservation, suppression et conformité.</p></div>
-      <div class="agent-card"><div class="agent-num">12</div><h4>RH / Parcours</h4><p>Analyse CV, candidatures, prépare l'entretien et adapte le discours.</p></div>
-      <div class="agent-card"><div class="agent-num">13</div><h4>Psycholinguistique</h4><p>Analyse ton et style sans diagnostic — limité aux signaux textuels observables.</p></div>
-      <div class="agent-card"><div class="agent-num">14</div><h4>Prospective / Tendances</h4><p>Anticipe les évolutions, risques et opportunités avec niveau de confiance.</p></div>
-      <div class="agent-card"><div class="agent-num">15</div><h4>Recherche officielle</h4><p>Vérifie les sources institutionnelles, sépare fait et hypothèse.</p></div>
-      <div class="agent-card"><div class="agent-num">16</div><h4>Brevets</h4><p>Recherche brevets connus, analyse la proximité avec l'idée, signale les risques.</p></div>
-      <div class="agent-card"><div class="agent-num">17</div><h4>Commercial</h4><p>Transforme la solution en offre vendable avec argumentaire et tunnel de conversion.</p></div>
-      <div class="agent-card"><div class="agent-num">18</div><h4>Base de données / Mémoire</h4><p>Modélise les tables, relations et historiques du projet.</p></div>
-      <div class="agent-card"><div class="agent-num">19</div><h4>API / Automatisation</h4><p>Connecte les outils, définit les workflows et automatise les exports.</p></div>
-      <div class="agent-card"><div class="agent-num">20</div><h4>Documentation</h4><p>Produit la documentation utilisateur, technique et les guides d'utilisation.</p></div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="plateforme_les_20_agents_principaux">Les 20 agents principaux</h2>
+<p data-i18n="plateforme_l_orchestrateur_s_lectionne_et">L'orchestrateur s&eacute;lectionne et s&eacute;quence les autres &agrave; chaque demande.</p>
+</div>
+<div class="grid-3">
+<div class="agent-card"><div class="agent-num">1</div><h4 data-i18n="plateforme_orchestrateur">Orchestrateur</h4><p data-i18n="plateforme_pilote_l_ensemble__s_lectionne">Pilote l'ensemble, s&eacute;lectionne les agents, fusionne les r&eacute;sultats et produit la r&eacute;ponse finale.</p></div>
+<div class="agent-card"><div class="agent-num">2</div><h4 data-i18n="plateforme_d_tection_de_fichiers">D&eacute;tection de fichiers</h4><p data-i18n="plateforme_classifie_le_contenu_d_pos">Classifie le contenu d&eacute;pos&eacute; : CV, contrat, rapport, facture, code, image, tableau.</p></div>
+<div class="agent-card"><div class="agent-num">3</div><h4 data-i18n="plateforme_linguistique">Linguistique</h4><p data-i18n="plateforme_orthographe__grammaire__conjug">Orthographe, grammaire, conjugaison, ponctuation, style et clart&eacute;.</p></div>
+<div class="agent-card"><div class="agent-num">4</div><h4 data-i18n="plateforme_rapport_automatique">Rapport automatique</h4><p data-i18n="plateforme_transforme_l_analyse_en_r_sum">Transforme l'analyse en r&eacute;sum&eacute; ex&eacute;cutif + recommandations + plan d'action.</p></div>
+<div class="agent-card"><div class="agent-num">5</div><h4 data-i18n="plateforme_qualit">Qualit&eacute;</h4><p data-i18n="plateforme_d_tecte_les_contradictions__v">D&eacute;tecte les contradictions, v&eacute;rifie la coh&eacute;rence et attribue un niveau de confiance.</p></div>
+<div class="agent-card"><div class="agent-num">6</div><h4 data-i18n="plateforme_prompt_engineer">Prompt Engineer</h4><p data-i18n="plateforme_transforme_une_demande_floue_e">Transforme une demande floue en prompt op&eacute;rationnel pr&eacute;cis.</p></div>
+<div class="agent-card"><div class="agent-num">7</div><h4 data-i18n="plateforme_comp_tences___skills">Comp&eacute;tences / Skills</h4><p data-i18n="plateforme_d_tecte_les_comp_tences_exista">D&eacute;tecte les comp&eacute;tences existantes, manquantes, g&eacute;n&egrave;re celles n&eacute;cessaires.</p></div>
+<div class="agent-card"><div class="agent-num">8</div><h4 data-i18n="plateforme_chef_de_projet">Chef de projet</h4><p data-i18n="plateforme_transforme_l_id_e_en_roadmap_a">Transforme l'id&eacute;e en roadmap avec MVP, &eacute;tapes et crit&egrave;res de succ&egrave;s.</p></div>
+<div class="agent-card"><div class="agent-num">9</div><h4 data-i18n="plateforme_ux___ui">UX / UI</h4><p data-i18n="plateforme_con_oit_le_parcours_utilisateu">Con&ccedil;oit le parcours utilisateur et la structure d'interface.</p></div>
+<div class="agent-card"><div class="agent-num">10</div><h4 data-i18n="plateforme_s_curit____confidentialit">S&eacute;curit&eacute; &amp; Confidentialit&eacute;</h4><p data-i18n="plateforme_d_tecte_les_donn_es_sensibles">D&eacute;tecte les donn&eacute;es sensibles, s&eacute;curise les acc&egrave;s et les cl&eacute;s API.</p></div>
+<div class="agent-card"><div class="agent-num">11</div><h4 data-i18n="plateforme_rgpd">RGPD</h4><p data-i18n="plateforme_v_rifie_consentement__conserva">V&eacute;rifie consentement, conservation, suppression et conformit&eacute;.</p></div>
+<div class="agent-card"><div class="agent-num">12</div><h4 data-i18n="plateforme_rh___parcours">RH / Parcours</h4><p data-i18n="plateforme_analyse_cv__candidatures__pr_p">Analyse CV, candidatures, pr&eacute;pare l'entretien et adapte le discours.</p></div>
+<div class="agent-card"><div class="agent-num">13</div><h4 data-i18n="plateforme_psycholinguistique">Psycholinguistique</h4><p data-i18n="plateforme_analyse_ton_et_style_sans_diag">Analyse ton et style sans diagnostic &mdash; limit&eacute; aux signaux textuels observables.</p></div>
+<div class="agent-card"><div class="agent-num">14</div><h4 data-i18n="plateforme_prospective___tendances">Prospective / Tendances</h4><p data-i18n="plateforme_anticipe_les__volutions__risqu">Anticipe les &eacute;volutions, risques et opportunit&eacute;s avec niveau de confiance.</p></div>
+<div class="agent-card"><div class="agent-num">15</div><h4 data-i18n="plateforme_recherche_officielle">Recherche officielle</h4><p data-i18n="plateforme_v_rifie_les_sources_institutio">V&eacute;rifie les sources institutionnelles, s&eacute;pare fait et hypoth&egrave;se.</p></div>
+<div class="agent-card"><div class="agent-num">16</div><h4 data-i18n="plateforme_brevets">Brevets</h4><p data-i18n="plateforme_recherche_brevets_connus__anal">Recherche brevets connus, analyse la proximit&eacute; avec l'id&eacute;e, signale les risques.</p></div>
+<div class="agent-card"><div class="agent-num">17</div><h4 data-i18n="plateforme_commercial">Commercial</h4><p data-i18n="plateforme_transforme_la_solution_en_offr">Transforme la solution en offre vendable avec argumentaire et tunnel de conversion.</p></div>
+<div class="agent-card"><div class="agent-num">18</div><h4 data-i18n="plateforme_base_de_donn_es___m_moire">Base de donn&eacute;es / M&eacute;moire</h4><p data-i18n="plateforme_mod_lise_les_tables__relations">Mod&eacute;lise les tables, relations et historiques du projet.</p></div>
+<div class="agent-card"><div class="agent-num">19</div><h4 data-i18n="plateforme_api___automatisation">API / Automatisation</h4><p data-i18n="plateforme_connecte_les_outils__d_finit_l">Connecte les outils, d&eacute;finit les workflows et automatise les exports.</p></div>
+<div class="agent-card"><div class="agent-num">20</div><h4 data-i18n="plateforme_documentation">Documentation</h4><p data-i18n="plateforme_produit_la_documentation_utili">Produit la documentation utilisateur, technique et les guides d'utilisation.</p></div>
+</div>
+</div>
 </section>
-
 <!-- SCHÉMA SUPABASE -->
 <section class="section" id="schema">
-  <div class="container">
-    <div class="section-header">
-      <h2>Schéma de base de données</h2>
-      <p>Supabase — PostgreSQL avec authentification, stockage fichiers et vecteurs pour la mémoire RAG.</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Table</th><th>Contenu</th></tr></thead>
-        <tbody>
-          <tr><td><code>users</code></td><td>Comptes, rôles, droits et informations de profil</td></tr>
-          <tr><td><code>projects</code></td><td>Objectifs, statut, historique des projets analysés</td></tr>
-          <tr><td><code>files</code></td><td>Fichiers déposés, type, catégorie détectée, URL de stockage</td></tr>
-          <tr><td><code>agents</code></td><td>Agents disponibles, rôles, prompts, statut actif</td></tr>
-          <tr><td><code>skills</code></td><td>Compétences existantes, manquantes et générées</td></tr>
-          <tr><td><code>analyses</code></td><td>Résultats, agents utilisés, score de confiance</td></tr>
-          <tr><td><code>reports</code></td><td>Rapports finaux, synthèses, recommandations, livrables</td></tr>
-          <tr><td><code>sources</code></td><td>Sources officielles, références et vérifications</td></tr>
-          <tr><td><code>patents</code></td><td>Brevets connus, mots-clés, similarités</td></tr>
-          <tr><td><code>logs</code></td><td>Journal d'exécution, erreurs, tests et événements</td></tr>
-          <tr><td><code>workflows</code></td><td>Définitions des flux n8n</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="plateforme_sch_ma_de_base_de_donn_es">Sch&eacute;ma de base de donn&eacute;es</h2>
+<p data-i18n="plateforme_supabase___postgresql_avec_aut">Supabase &mdash; PostgreSQL avec authentification, stockage fichiers et vecteurs pour la m&eacute;moire RAG.</p>
+</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th data-i18n="plateforme_table">Table</th><th data-i18n="plateforme_contenu">Contenu</th></tr></thead>
+<tbody>
+<tr><td><code data-i18n="plateforme_users">users</code></td><td data-i18n="plateforme_comptes__r_les__droits_et_info">Comptes, r&ocirc;les, droits et informations de profil</td></tr>
+<tr><td><code data-i18n="plateforme_projects">projects</code></td><td data-i18n="plateforme_objectifs__statut__historique">Objectifs, statut, historique des projets analys&eacute;s</td></tr>
+<tr><td><code data-i18n="plateforme_files">files</code></td><td data-i18n="plateforme_fichiers_d_pos_s__type__cat_go">Fichiers d&eacute;pos&eacute;s, type, cat&eacute;gorie d&eacute;tect&eacute;e, URL de stockage</td></tr>
+<tr><td><code data-i18n="plateforme_agents_1">agents</code></td><td data-i18n="plateforme_agents_disponibles__r_les__pro">Agents disponibles, r&ocirc;les, prompts, statut actif</td></tr>
+<tr><td><code data-i18n="plateforme_skills">skills</code></td><td data-i18n="plateforme_comp_tences_existantes__manqua">Comp&eacute;tences existantes, manquantes et g&eacute;n&eacute;r&eacute;es</td></tr>
+<tr><td><code data-i18n="plateforme_analyses">analyses</code></td><td data-i18n="plateforme_r_sultats__agents_utilis_s__sc">R&eacute;sultats, agents utilis&eacute;s, score de confiance</td></tr>
+<tr><td><code data-i18n="plateforme_reports">reports</code></td><td data-i18n="plateforme_rapports_finaux__synth_ses__re">Rapports finaux, synth&egrave;ses, recommandations, livrables</td></tr>
+<tr><td><code data-i18n="plateforme_sources">sources</code></td><td data-i18n="plateforme_sources_officielles__r_f_rence">Sources officielles, r&eacute;f&eacute;rences et v&eacute;rifications</td></tr>
+<tr><td><code data-i18n="plateforme_patents">patents</code></td><td data-i18n="plateforme_brevets_connus__mots_cl_s__sim">Brevets connus, mots-cl&eacute;s, similarit&eacute;s</td></tr>
+<tr><td><code data-i18n="plateforme_logs">logs</code></td><td data-i18n="plateforme_journal_d_ex_cution__erreurs">Journal d'ex&eacute;cution, erreurs, tests et &eacute;v&eacute;nements</td></tr>
+<tr><td><code data-i18n="plateforme_workflows">workflows</code></td><td data-i18n="plateforme_d_finitions_des_flux_n8n">D&eacute;finitions des flux n8n</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-
 <!-- ROADMAP -->
 <section class="section section--light" id="roadmap">
-  <div class="container">
-    <div class="section-header">
-      <h2>Roadmap de développement</h2>
-      <p>6 phases progressives — de la preuve de concept à la plateforme SaaS complète.</p>
-    </div>
-    <div class="roadmap">
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle active">1</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Noyau <span class="tag tag-orange" style="margin-left:8px;">En cours</span></h3><p>Orchestrateur, détection de fichiers, correction linguistique, rapport automatique, contrôle qualité.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">2</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Agents métiers</h3><p>Technique, juridique, financier, marketing, RH, commercial, sécurité.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">3</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Automatisation</h3><p>Connexion n8n + Supabase, formulaires, stockage et exports multi-formats.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">4</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Recherche avancée</h3><p>Sources officielles, veille concurrentielle, recherche de brevets, citations.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">5</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Plateforme SaaS</h3><p>Interface utilisateur, comptes, offres gratuites/payantes, documentation, support.</p></div>
-      </div>
-      <div class="roadmap-item">
-        <div class="roadmap-left"><div class="roadmap-circle">6</div><div class="roadmap-line"></div></div>
-        <div class="roadmap-body"><h3>Multi-agents avancé</h3><p>CrewAI crews, LangGraph state machines, mémoire, boucles de contrôle et observabilité.</p></div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="plateforme_roadmap_de_d_veloppement">Roadmap de d&eacute;veloppement</h2>
+<p data-i18n="plateforme_6_phases_progressives___de_la">6 phases progressives &mdash; de la preuve de concept &agrave; la plateforme SaaS compl&egrave;te.</p>
+</div>
+<div class="roadmap">
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle active">1</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="plateforme_noyauen_cours">Noyau <span class="tag tag-orange" data-i18n="plateforme_en_cours" style="margin-left:8px;">En cours</span></h3><p data-i18n="plateforme_orchestrateur__d_tection_de_fi">Orchestrateur, d&eacute;tection de fichiers, correction linguistique, rapport automatique, contr&ocirc;le qualit&eacute;.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">2</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="plateforme_agents_m_tiers">Agents m&eacute;tiers</h3><p data-i18n="plateforme_technique__juridique__financie">Technique, juridique, financier, marketing, RH, commercial, s&eacute;curit&eacute;.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">3</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="plateforme_automatisation">Automatisation</h3><p data-i18n="plateforme_connexion_n8n___supabase__form">Connexion n8n + Supabase, formulaires, stockage et exports multi-formats.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">4</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="plateforme_recherche_avanc_e">Recherche avanc&eacute;e</h3><p data-i18n="plateforme_sources_officielles__veille_co">Sources officielles, veille concurrentielle, recherche de brevets, citations.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">5</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="plateforme_plateforme_saas">Plateforme SaaS</h3><p data-i18n="plateforme_interface_utilisateur__comptes">Interface utilisateur, comptes, offres gratuites/payantes, documentation, support.</p></div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-left"><div class="roadmap-circle">6</div><div class="roadmap-line"></div></div>
+<div class="roadmap-body"><h3 data-i18n="plateforme_multi_agents_avanc">Multi-agents avanc&eacute;</h3><p data-i18n="plateforme_crewai_crews__langgraph_state">CrewAI crews, LangGraph state machines, m&eacute;moire, boucles de contr&ocirc;le et observabilit&eacute;.</p></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- FORMATS D'EXPORT -->
 <section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Formats d'export supportés</h2>
-    </div>
-    <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
-      <div class="tech-pill"><span class="tech-pill-icon">📝</span> TXT</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📋</span> Markdown</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📄</span> PDF</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📘</span> DOCX</div>
-      <div class="tech-pill"><span class="tech-pill-icon">🔧</span> JSON</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📊</span> CSV</div>
-      <div class="tech-pill"><span class="tech-pill-icon">🌐</span> HTML</div>
-      <div class="tech-pill"><span class="tech-pill-icon">📦</span> ZIP</div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-header">
+<h2 data-i18n="plateforme_formats_d_export_support_s">Formats d'export support&eacute;s</h2>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+<div class="tech-pill" data-i18n="plateforme_txt"><span class="tech-pill-icon">📝</span> TXT</div>
+<div class="tech-pill" data-i18n="plateforme_markdown"><span class="tech-pill-icon">📋</span> Markdown</div>
+<div class="tech-pill" data-i18n="plateforme_pdf"><span class="tech-pill-icon">📄</span> PDF</div>
+<div class="tech-pill" data-i18n="plateforme_docx"><span class="tech-pill-icon">📘</span> DOCX</div>
+<div class="tech-pill" data-i18n="plateforme_json"><span class="tech-pill-icon">🔧</span> JSON</div>
+<div class="tech-pill" data-i18n="plateforme_csv"><span class="tech-pill-icon">📊</span> CSV</div>
+<div class="tech-pill" data-i18n="plateforme_html"><span class="tech-pill-icon">🌐</span> HTML</div>
+<div class="tech-pill" data-i18n="plateforme_zip"><span class="tech-pill-icon">📦</span> ZIP</div>
+</div>
+</div>
 </section>
-
 <section class="cta-section">
-  <div class="container">
-    <h2>Prêt à construire ?</h2>
-    <p>Commencez avec la pile gratuite. Claude Free + NotebookLM + Supabase Free suffit pour le prototype.</p>
-    <a href="contact.html" class="btn" style="background:#fff; color:var(--secondary);">Nous contacter</a>
-  </div>
+<div class="container">
+<h2 data-i18n="plateforme_pr_t___construire">Pr&ecirc;t &agrave; construire ?</h2>
+<p data-i18n="plateforme_commencez_avec_la_pile_gratuit">Commencez avec la pile gratuite. Claude Free + NotebookLM + Supabase Free suffit pour le prototype.</p>
+<a class="btn" data-i18n="plateforme_nous_contacter" href="contact.html" style="background:#fff; color:var(--secondary);">Nous contacter</a>
+</div>
 </section>
-
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span style="color:var(--secondary);">.</span></div><p>Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
-      <div><h4>Plateforme</h4><ul><li><a href="plateforme.html">Architecture IA</a></li><li><a href="plateforme.html#agents">Agents</a></li><li><a href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
-      <div><h4>Aide</h4><ul><li><a href="humanitaire.html">Module humanitaire</a></li><li><a href="humanitaire.html#urgence">Urgences</a></li></ul></div>
-      <div><h4>Projet</h4><ul><li><a href="apropos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><span>© 2026 KIJ Platform</span><span>Assistant IA propulsé par Claude (Anthropic)</span></div>
-  </div>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span style="color:var(--secondary);">.</span></div><p data-i18n="plateforme_plateforme_ia_multi_agents_pou">Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
+<div><h4 data-i18n="plateforme_plateforme">Plateforme</h4><ul><li><a data-i18n="plateforme_architecture_ia" href="plateforme.html">Architecture IA</a></li><li><a data-i18n="plateforme_agents" href="plateforme.html#agents">Agents</a></li><li><a data-i18n="plateforme_roadmap" href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
+<div><h4 data-i18n="plateforme_aide">Aide</h4><ul><li><a data-i18n="plateforme_module_humanitaire" href="humanitaire.html">Module humanitaire</a></li><li><a data-i18n="plateforme_urgences" href="humanitaire.html#urgence">Urgences</a></li></ul></div>
+<div><h4 data-i18n="plateforme_projet">Projet</h4><ul><li><a data-i18n="plateforme_propos" href="apropos.html">&Agrave; propos</a></li><li><a data-i18n="plateforme_contact" href="contact.html">Contact</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span data-i18n="plateforme_2026_kij_platform">&copy; 2026 KIJ Platform</span><span data-i18n="plateforme_assistant_ia_propuls__par_clau">Assistant IA propuls&eacute; par Claude (Anthropic)</span></div>
+</div>
 </footer>
 <script src="js/main.js"></script>
 <script src="js/chat-widget.js"></script>
