@@ -1,153 +1,154 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — KIJ</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &mdash; KIJ</title>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo"><div class="logo-icon">K</div>KIJ<span>.</span></a>
-      <div class="nav-links">
-        <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-        <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta active">Contact</a>
-      </div>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </nav>
-    <nav class="mobile-menu">
-      <a href="index.html">Accueil</a><a href="plateforme.html">Plateforme IA</a>
-      <a href="humanitaire.html">Aide humanitaire</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
-    </nav>
-  </div>
+<div class="container">
+<nav class="nav">
+<a class="nav-logo" href="index.html"><div class="logo-icon">K</div>KIJ<span>.</span></a>
+<div class="nav-links">
+<a data-i18n="contact_accueil" href="index.html">Accueil</a><a data-i18n="contact_plateforme_ia" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="contact_aide_humanitaire" href="humanitaire.html">Aide humanitaire</a><a data-i18n="contact_propos" href="apropos.html">&Agrave; propos</a>
+<a class="nav-cta active" data-i18n="contact_contact" href="contact.html">Contact</a>
+
+        <div class="lang-switch">
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+</div>
+<button aria-expanded="false" aria-label="Menu" class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-menu">
+<a data-i18n="contact_accueil" href="index.html">Accueil</a><a data-i18n="contact_plateforme_ia" href="plateforme.html">Plateforme IA</a>
+<a data-i18n="contact_aide_humanitaire" href="humanitaire.html">Aide humanitaire</a><a data-i18n="contact_propos" href="apropos.html">&Agrave; propos</a><a data-i18n="contact_contact" href="contact.html">Contact</a>
+
+        <div class="lang-switch">
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+</nav>
+</div>
 </header>
-
 <section class="page-hero">
-  <div class="container">
-    <nav class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Contact</span></nav>
-    <h1>Nous contacter</h1>
-    <p>Une question sur la plateforme, un besoin d'aide ou une collaboration ? Décrivez votre situation.</p>
-  </div>
+<div class="container">
+<nav class="breadcrumb"><a data-i18n="contact_accueil" href="index.html">Accueil</a><span>/</span><span data-i18n="contact_contact">Contact</span></nav>
+<h1 data-i18n="contact_nous_contacter">Nous contacter</h1>
+<p data-i18n="contact_une_question_sur_la_plateforme">Une question sur la plateforme, un besoin d'aide ou une collaboration ? D&eacute;crivez votre situation.</p>
+</div>
 </section>
-
 <section class="section">
-  <div class="container">
-    <div class="grid-2" style="gap:56px; align-items:start;">
-
-      <!-- FORMULAIRE -->
-      <div>
-        <h2 style="margin-bottom:8px;">Envoyer un message</h2>
-        <p style="color:var(--text-muted); margin-bottom:28px; font-size:.93rem;">Ce formulaire est local — aucune donnée n'est transmise à un serveur externe.</p>
-
-        <div id="form-success" style="display:none;" class="info-box" style="margin-bottom:20px;">
-          ✓ Votre message a bien été enregistré localement.
+<div class="container">
+<div class="grid-2" style="gap:56px; align-items:start;">
+<!-- FORMULAIRE -->
+<div>
+<h2 data-i18n="contact_envoyer_un_message" style="margin-bottom:8px;">Envoyer un message</h2>
+<p data-i18n="contact_ce_formulaire_est_local___aucu" style="color:var(--text-muted); margin-bottom:28px; font-size:.93rem;">Ce formulaire est local &mdash; aucune donn&eacute;e n'est transmise &agrave; un serveur externe.</p>
+<div class="info-box" data-i18n="contact_votre_message_a_bien__t__enr" id="form-success" style="margin-bottom:20px;">
+          &checkmark; Votre message a bien &eacute;t&eacute; enregistr&eacute; localement.
         </div>
-
-        <form id="contact-form" novalidate>
-          <div class="form-group">
-            <label for="prenom">Prénom *</label>
-            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+<form id="contact-form" novalidate="">
+<div class="form-group">
+<label data-i18n="contact_pr_nom" for="prenom">Pr&eacute;nom *</label>
+<input id="prenom" name="prenom" placeholder="Votre pr&eacute;nom" required="" type="text"/>
+</div>
+<div class="form-group">
+<label data-i18n="contact_email" for="email">Email</label>
+<input id="email" name="email" placeholder="votre@email.com" type="email"/>
+<p class="form-note" data-i18n="contact_optionnel___aucun_email_n_est">Optionnel &mdash; aucun email n'est envoy&eacute; depuis ce formulaire.</p>
+</div>
+<div class="form-group">
+<label data-i18n="contact_type_de_demande" for="sujet">Type de demande *</label>
+<select id="sujet" name="sujet" required="">
+<option data-i18n="contact_choisissez" value="">&mdash; Choisissez &mdash;</option>
+<option data-i18n="contact_besoin_d_aide_humanitaire___so" value="aide">Besoin d'aide humanitaire / sociale</option>
+<option data-i18n="contact_recherche_d_emploi___reconvers" value="emploi">Recherche d'emploi / reconversion</option>
+<option data-i18n="contact_question_sur_la_plateforme_ia" value="plateforme">Question sur la plateforme IA</option>
+<option data-i18n="contact_partenariat_ou_collaboration" value="collaboration">Partenariat ou collaboration</option>
+<option data-i18n="contact_question_technique" value="technique">Question technique</option>
+<option data-i18n="contact_autre" value="autre">Autre</option>
+</select>
+</div>
+<div class="form-group">
+<label data-i18n="contact_d_crivez_votre_situation" for="situation">D&eacute;crivez votre situation *</label>
+<textarea id="situation" name="situation" placeholder="Expliquez votre situation ou votre question en quelques lignes..." required=""></textarea>
+</div>
+<div class="form-group">
+<label data-i18n="contact_langue_pr_f_r_e" for="langue">Langue pr&eacute;f&eacute;r&eacute;e</label>
+<select id="langue" name="langue">
+<option data-i18n="contact_fran_ais" value="fr">Fran&ccedil;ais</option>
+<option data-i18n="contact_english" value="en">English</option>
+<option data-i18n="contact_" value="ar">العربية</option>
+<option data-i18n="contact_espa_ol" value="es">Espa&ntilde;ol</option>
+<option data-i18n="contact_portugu_s" value="pt">Portugu&ecirc;s</option>
+<option data-i18n="contact__1" value="uk">&Ucy;&kcy;&rcy;&acy;&yicy;&ncy;&scy;&softcy;&kcy;&acy;</option>
+<option data-i18n="contact_wolof" value="wo">Wolof</option>
+<option data-i18n="contact_soomaali" value="so">Soomaali</option>
+</select>
+</div>
+<div class="warn-box" data-i18n="contact_si_vous__tes_en_situation_d" style="margin-bottom:20px; font-size:.87rem;">
+            ⚠️ Si vous &ecirc;tes en situation d'urgence vitale, n'attendez pas. Appelez le <strong>15</strong> (SAMU), <strong>3114</strong> (suicide), <strong>3919</strong> (violences) ou <strong>115</strong> (h&eacute;bergement).
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="votre@email.com" />
-            <p class="form-note">Optionnel — aucun email n'est envoyé depuis ce formulaire.</p>
-          </div>
-          <div class="form-group">
-            <label for="sujet">Type de demande *</label>
-            <select id="sujet" name="sujet" required>
-              <option value="">— Choisissez —</option>
-              <option value="aide">Besoin d'aide humanitaire / sociale</option>
-              <option value="emploi">Recherche d'emploi / reconversion</option>
-              <option value="plateforme">Question sur la plateforme IA</option>
-              <option value="collaboration">Partenariat ou collaboration</option>
-              <option value="technique">Question technique</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="situation">Décrivez votre situation *</label>
-            <textarea id="situation" name="situation" placeholder="Expliquez votre situation ou votre question en quelques lignes..." required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="langue">Langue préférée</label>
-            <select id="langue" name="langue">
-              <option value="fr">Français</option>
-              <option value="en">English</option>
-              <option value="ar">العربية</option>
-              <option value="es">Español</option>
-              <option value="pt">Português</option>
-              <option value="uk">Українська</option>
-              <option value="wo">Wolof</option>
-              <option value="so">Soomaali</option>
-            </select>
-          </div>
-          <div class="warn-box" style="margin-bottom:20px; font-size:.87rem;">
-            ⚠️ Si vous êtes en situation d'urgence vitale, n'attendez pas. Appelez le <strong>15</strong> (SAMU), <strong>3114</strong> (suicide), <strong>3919</strong> (violences) ou <strong>115</strong> (hébergement).
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
-            Enregistrer le message →
+<button class="btn btn-primary" data-i18n="contact_enregistrer_le_message" style="width:100%; justify-content:center;" type="submit">
+            Enregistrer le message &rarr;
           </button>
-        </form>
-      </div>
-
-      <!-- INFOS LATÉRALES -->
-      <div>
-        <div class="card" style="margin-bottom:24px;">
-          <h3 style="margin-bottom:16px;">Urgences immédiates</h3>
-          <div style="display:flex; flex-direction:column; gap:10px;">
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🏥 SAMU — urgence médicale</span><strong>15</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>💙 Prévention suicide</span><strong>3114</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🟣 Violences conjugales</span><strong>3919</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🏠 Hébergement d'urgence</span><strong>115</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🧒 Enfant en danger</span><strong>119</strong>
-            </div>
-            <div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
-              <span>🚒 Pompiers</span><strong>18</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 style="margin-bottom:16px;">Ce que nous pouvons faire</h3>
-          <div class="feature-list">
-            <div class="feature-item"><div class="feature-dot"></div><div>Analyser votre situation et activer les agents adaptés</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Rédiger CV, lettre de motivation, courrier administratif</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Orienter vers les ressources locales et associations</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Construire un plan d'action concret et priorisé</div></div>
-            <div class="feature-item"><div class="feature-dot"></div><div>Répondre dans votre langue</div></div>
-            <div class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div style="color:var(--text-muted);">Remplacer un médecin, juriste ou psychologue — NON</div></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+</form>
+</div>
+<!-- INFOS LATÉRALES -->
+<div>
+<div class="card" style="margin-bottom:24px;">
+<h3 data-i18n="contact_urgences_imm_diates" style="margin-bottom:16px;">Urgences imm&eacute;diates</h3>
+<div style="display:flex; flex-direction:column; gap:10px;">
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="contact_samu___urgence_m_dicale">🏥 SAMU &mdash; urgence m&eacute;dicale</span><strong>15</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="contact_pr_vention_suicide">💙 Pr&eacute;vention suicide</span><strong>3114</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="contact_violences_conjugales">🟣 Violences conjugales</span><strong>3919</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="contact_h_bergement_d_urgence">🏠 H&eacute;bergement d'urgence</span><strong>115</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="contact_enfant_en_danger">🧒 Enfant en danger</span><strong>119</strong>
+</div>
+<div style="display:flex; justify-content:space-between; padding:10px; background:var(--light); border-radius:var(--radius-sm);">
+<span data-i18n="contact_pompiers">🚒 Pompiers</span><strong>18</strong>
+</div>
+</div>
+</div>
+<div class="card">
+<h3 data-i18n="contact_ce_que_nous_pouvons_faire" style="margin-bottom:16px;">Ce que nous pouvons faire</h3>
+<div class="feature-list">
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="contact_analyser_votre_situation_et_ac">Analyser votre situation et activer les agents adapt&eacute;s</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="contact_r_diger_cv__lettre_de_motivati">R&eacute;diger CV, lettre de motivation, courrier administratif</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="contact_orienter_vers_les_ressources_l">Orienter vers les ressources locales et associations</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="contact_construire_un_plan_d_action_co">Construire un plan d'action concret et prioris&eacute;</div></div>
+<div class="feature-item"><div class="feature-dot"></div><div data-i18n="contact_r_pondre_dans_votre_langue">R&eacute;pondre dans votre langue</div></div>
+<div class="feature-item"><div class="feature-dot" style="background:var(--secondary)"></div><div data-i18n="contact_remplacer_un_m_decin__juriste" style="color:var(--text-muted);">Remplacer un m&eacute;decin, juriste ou psychologue &mdash; NON</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span style="color:var(--secondary);">.</span></div><p>Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
-      <div><h4>Plateforme</h4><ul><li><a href="plateforme.html">Architecture IA</a></li><li><a href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
-      <div><h4>Aide</h4><ul><li><a href="humanitaire.html">Module humanitaire</a></li><li><a href="humanitaire.html#urgence">Urgences</a></li></ul></div>
-      <div><h4>Projet</h4><ul><li><a href="apropos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><span>© 2026 KIJ Platform</span><span>Formulaire local — aucune donnée transmise</span></div>
-  </div>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><div class="nav-logo" style="color:#fff;"><div class="logo-icon">K</div>KIJ<span style="color:var(--secondary);">.</span></div><p data-i18n="contact_plateforme_ia_multi_agents_pou">Plateforme IA multi-agents pour l'analyse intelligente, l'aide humanitaire et l'insertion professionnelle.</p></div>
+<div><h4 data-i18n="contact_plateforme">Plateforme</h4><ul><li><a data-i18n="contact_architecture_ia" href="plateforme.html">Architecture IA</a></li><li><a data-i18n="contact_roadmap" href="plateforme.html#roadmap">Roadmap</a></li></ul></div>
+<div><h4 data-i18n="contact_aide">Aide</h4><ul><li><a data-i18n="contact_module_humanitaire" href="humanitaire.html">Module humanitaire</a></li><li><a data-i18n="contact_urgences" href="humanitaire.html#urgence">Urgences</a></li></ul></div>
+<div><h4 data-i18n="contact_projet">Projet</h4><ul><li><a data-i18n="contact_propos" href="apropos.html">&Agrave; propos</a></li><li><a data-i18n="contact_contact" href="contact.html">Contact</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span data-i18n="contact_2026_kij_platform">&copy; 2026 KIJ Platform</span><span data-i18n="contact_formulaire_local___aucune_donn">Formulaire local &mdash; aucune donn&eacute;e transmise</span></div>
+</div>
 </footer>
 <script src="js/main.js"></script>
 <script src="js/chat-widget.js"></script>
