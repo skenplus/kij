@@ -1,0 +1,16 @@
+{
+  "nav.home": "Home",
+  "nav.platform": "AI Platform",
+  "nav.humanitarian": "Humanitarian Aid",
+  "nav.about": "About",
+  "nav.contact": "Contact",
+  "hero.badge": "✦ Artificial Intelligence & Social Impact",
+  "hero.title": "AI in the service of<br /><em>humanity</em> and<br />performance",
+  "hero.desc": "KIJ is a multi-agent AI platform that analyzes, guides, and supports — whether you are an organization, a professional, or a person in difficulty.",
+  "hero.cta1": "Discover the platform →",
+  "hero.cta2": "Humanitarian module",
+  "hero.stat1": "Main agents",
+  "hero.stat2": "Specialized sub-agents",
+  "hero.stat3": "Connected tools",
+  "hero.stat4": "Export formats"
+}
